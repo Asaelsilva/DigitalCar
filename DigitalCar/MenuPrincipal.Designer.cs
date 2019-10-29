@@ -142,6 +142,7 @@
             this.inativarToolStripMenuItem.Name = "inativarToolStripMenuItem";
             this.inativarToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.inativarToolStripMenuItem.Text = "Inativar";
+            this.inativarToolStripMenuItem.Click += new System.EventHandler(this.inativarToolStripMenuItem_Click);
             // 
             // veiculoToolStripMenuItem
             // 

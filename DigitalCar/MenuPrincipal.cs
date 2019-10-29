@@ -31,5 +31,10 @@ namespace DigitalCar
         {
             new ConsultarFuncionario().Show();
         }
+
+        private void inativarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new InativarFuncionario().Show();
+        }
     }
 }
