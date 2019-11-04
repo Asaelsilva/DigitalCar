@@ -30,16 +30,18 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnIncluirFuncionario = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbAtivo = new System.Windows.Forms.RadioButton();
+            this.rbInativo = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -65,17 +67,17 @@
             this.dataGridView1.Size = new System.Drawing.Size(677, 71);
             this.dataGridView1.TabIndex = 65;
             // 
-            // btnIncluirFuncionario
+            // btnPesquisar
             // 
-            this.btnIncluirFuncionario.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnIncluirFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIncluirFuncionario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncluirFuncionario.Location = new System.Drawing.Point(1090, 193);
-            this.btnIncluirFuncionario.Name = "btnIncluirFuncionario";
-            this.btnIncluirFuncionario.Size = new System.Drawing.Size(156, 37);
-            this.btnIncluirFuncionario.TabIndex = 64;
-            this.btnIncluirFuncionario.Text = "Consultar";
-            this.btnIncluirFuncionario.UseVisualStyleBackColor = false;
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Location = new System.Drawing.Point(1090, 193);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(156, 37);
+            this.btnPesquisar.TabIndex = 64;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -114,29 +116,29 @@
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
-            // radioButton1
+            // rbAtivo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(341, 447);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(86, 25);
-            this.radioButton1.TabIndex = 67;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Atativar";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbAtivo.AutoSize = true;
+            this.rbAtivo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAtivo.Location = new System.Drawing.Point(18, 38);
+            this.rbAtivo.Name = "rbAtivo";
+            this.rbAtivo.Size = new System.Drawing.Size(67, 25);
+            this.rbAtivo.TabIndex = 67;
+            this.rbAtivo.TabStop = true;
+            this.rbAtivo.Text = "Ativo";
+            this.rbAtivo.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbInativo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Calibri", 10.2F);
-            this.radioButton2.Location = new System.Drawing.Point(516, 447);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 25);
-            this.radioButton2.TabIndex = 68;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Inativar";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbInativo.AutoSize = true;
+            this.rbInativo.Font = new System.Drawing.Font("Calibri", 10.2F);
+            this.rbInativo.Location = new System.Drawing.Point(193, 38);
+            this.rbInativo.Name = "rbInativo";
+            this.rbInativo.Size = new System.Drawing.Size(83, 25);
+            this.rbInativo.TabIndex = 68;
+            this.rbInativo.TabStop = true;
+            this.rbInativo.Text = "Inativar";
+            this.rbInativo.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -150,17 +152,28 @@
             this.button2.Text = "Salvar";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbAtivo);
+            this.groupBox1.Controls.Add(this.rbInativo);
+            this.groupBox1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(329, 431);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(387, 100);
+            this.groupBox1.TabIndex = 70;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Status ";
+            // 
             // InativarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1420, 758);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnIncluirFuncionario);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -169,6 +182,8 @@
             this.Text = "Inativar Funcionario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,13 +193,14 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnIncluirFuncionario;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbAtivo;
+        private System.Windows.Forms.RadioButton rbInativo;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

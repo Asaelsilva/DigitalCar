@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigitalCar.Veiculo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,17 +25,33 @@ namespace DigitalCar
 
         private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new InserirFuncionario().Show();
+            InserirFuncionario inserirFuncionario = new InserirFuncionario();
+            //inserirFuncionario.MdiParent = this;
+            inserirFuncionario.Show();
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ConsultarFuncionario().Show();
+            ConsultarFuncionario consultarFuncionario = new ConsultarFuncionario();
+            //consultarFuncionario.MdiParent = this;
+            consultarFuncionario.Show();
+            
         }
 
         private void inativarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new InativarFuncionario().Show();
+            InativarFuncionario inativarFuncionario = new InativarFuncionario();
+            //inativarFuncionario.MdiParent = this;
+            inativarFuncionario.Show();
+            
+        }
+
+        private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            InserirVeiculo inserirVeiculo = new InserirVeiculo();
+            inserirVeiculo.Show();
+
+
         }
     }
 }

@@ -41,21 +41,23 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsultarFuncionario.cs">
+    <Compile Include="Funcionario\ConsultarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarFuncionario.Designer.cs">
+    <Compile Include="Funcionario\ConsultarFuncionario.Designer.cs">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="InativarFuncionario.cs">
+    <Compile Include="Entities\Funcao.cs" />
+    <Compile Include="Entities\Funcionario.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Funcionario\InativarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InativarFuncionario.Designer.cs">
+    <Compile Include="Funcionario\InativarFuncionario.Designer.cs">
       <DependentUpon>InativarFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
@@ -64,24 +66,30 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="InserirFuncionario.cs">
+    <Compile Include="Funcionario\InserirFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InserirFuncionario.Designer.cs">
+    <Compile Include="Funcionario\InserirFuncionario.Designer.cs">
       <DependentUpon>InserirFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConsultarFuncionario.resx">
+    <Compile Include="Veiculo\InserirVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo\InserirVeiculo.Designer.cs">
+      <DependentUpon>InserirVeiculo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Funcionario\ConsultarFuncionario.resx">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InativarFuncionario.resx">
+    <EmbeddedResource Include="Funcionario\InativarFuncionario.resx">
       <DependentUpon>InativarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InserirFuncionario.resx">
+    <EmbeddedResource Include="Funcionario\InserirFuncionario.resx">
       <DependentUpon>InserirFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -94,6 +102,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Veiculo\InserirVeiculo.resx">
+      <DependentUpon>InserirVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,10 +116,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Estrada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bdDllEspecifica\bdDllEspecifica.csproj">
+      <Project>{FD0F3279-3663-4C45-97DB-1247D8AFF6E3}</Project>
+      <Name>bdDllEspecifica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DbDllGenerico\DbDllGenerico.csproj">
+      <Project>{f61c9e74-9496-42d5-8df4-f3216869fc73}</Project>
+      <Name>DbDllGenerico</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

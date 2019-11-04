@@ -160,19 +160,20 @@
             // inserirToolStripMenuItem1
             // 
             this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.inserirToolStripMenuItem1.Text = "Inserir";
+            this.inserirToolStripMenuItem1.Click += new System.EventHandler(this.inserirToolStripMenuItem1_Click);
             // 
             // consultarToolStripMenuItem1
             // 
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.consultarToolStripMenuItem1.Text = "Consultar";
             // 
             // alterarToolStripMenuItem1
             // 
             this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
-            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(216, 28);
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
             // manutençãoToolStripMenuItem
@@ -184,7 +185,7 @@
             this.excluirToolStripMenuItem1,
             this.regeitarToolStripMenuItem});
             this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
-            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.manutençãoToolStripMenuItem.Text = "Manutenção ";
             // 
             // inserirToolStripMenuItem2
@@ -225,7 +226,7 @@
             this.alterarToolStripMenuItem2,
             this.excluirToolStripMenuItem});
             this.viagemToolStripMenuItem.Name = "viagemToolStripMenuItem";
-            this.viagemToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.viagemToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.viagemToolStripMenuItem.Text = "Viagem";
             // 
             // registrarToolStripMenuItem
