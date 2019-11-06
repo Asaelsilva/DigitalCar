@@ -1,4 +1,6 @@
 ﻿using DigitalCar.Veiculo;
+using DigitalCar.Veiculo.Manutencao;
+using DigitalCar.Viagem;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,36 +24,79 @@ namespace DigitalCar
         {
             Application.Exit();
         }
+        //====================== Metodos do Menu Funcionario ========================
 
-        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MenuInserirFuncionario_Click(object sender, EventArgs e)
         {
             InserirFuncionario inserirFuncionario = new InserirFuncionario();
             //inserirFuncionario.MdiParent = this;
             inserirFuncionario.Show();
         }
 
-        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MenuConsultarFuncionario_Click(object sender, EventArgs e)
         {
             ConsultarFuncionario consultarFuncionario = new ConsultarFuncionario();
-            //consultarFuncionario.MdiParent = this;
             consultarFuncionario.Show();
-            
         }
 
-        private void inativarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MenuAtivarInativarFuncionario_Click(object sender, EventArgs e)
         {
             InativarFuncionario inativarFuncionario = new InativarFuncionario();
-            //inativarFuncionario.MdiParent = this;
             inativarFuncionario.Show();
-            
         }
 
-        private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
+
+        //====================== Metodos do Menu Veiculo ========================
+
+        private void MenuInserirVeiculo_Click(object sender, EventArgs e)
         {
             InserirVeiculo inserirVeiculo = new InserirVeiculo();
             inserirVeiculo.Show();
+        }
+
+        private void MenuConsultarVeiculo_Click(object sender, EventArgs e)
+        {
+            ConsultarVeiculo consultarVeiculo = new ConsultarVeiculo();
+            consultarVeiculo.Show();
+        }
+
+        private void MenuSolicitarManutencaoVeiculo_Click(object sender, EventArgs e)
+        {
+            ManutencaoSolicitar manutencaoSolicitar = new ManutencaoSolicitar();
+            manutencaoSolicitar.Show();
+        }
+
+        private void MenuConsultarManutencaoVeiculo_Click(object sender, EventArgs e)
+        {
+            ManutencaoConsultar manutencaoConsultar = new ManutencaoConsultar();
+            manutencaoConsultar.Show();
+        }
+
+        private void MenuAprovarRejeitarManutencaoVeiculo_Click(object sender, EventArgs e)
+        {
+            ManutencaAprovar manutencaAprovar = new ManutencaAprovar();
+            manutencaAprovar.Show();
+        }
 
 
+        //======================Metodos do Menu Viagem========================
+
+        private void MenuRegistrarViagem_Click(object sender, EventArgs e)
+        {
+            RegistrarViagem registrarViagem = new RegistrarViagem();
+            registrarViagem.Show();
+        }
+                
+        private void MenuConsultarAlterarViagem_Click(object sender, EventArgs e)
+        {
+            ConsultarAlterarViagem consultarAlterarViagem = new ConsultarAlterarViagem();
+            consultarAlterarViagem.Show();
+        }
+
+        private void MenuAnularViagem_Click(object sender, EventArgs e)
+        {
+            AnularViagem anularViagem = new AnularViagem();
+            anularViagem.Show();
         }
     }
 }

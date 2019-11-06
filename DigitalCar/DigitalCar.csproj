@@ -74,11 +74,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veiculo\ConsultarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo\ConsultarVeiculo.Designer.cs">
+      <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veiculo\InserirVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Veiculo\InserirVeiculo.Designer.cs">
       <DependentUpon>InserirVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaAprovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaAprovar.Designer.cs">
+      <DependentUpon>ManutencaAprovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaoConsultar.Designer.cs">
+      <DependentUpon>ManutencaoConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaoSolicitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo\Manutencao\ManutencaoSolicitar.Designer.cs">
+      <DependentUpon>ManutencaoSolicitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viagem\AnularViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viagem\AnularViagem.Designer.cs">
+      <DependentUpon>AnularViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viagem\ConsultarAlterarViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viagem\ConsultarAlterarViagem.Designer.cs">
+      <DependentUpon>ConsultarAlterarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viagem\RegistrarViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viagem\RegistrarViagem.Designer.cs">
+      <DependentUpon>RegistrarViagem.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Funcionario\ConsultarFuncionario.resx">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
@@ -102,8 +144,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Veiculo\ConsultarVeiculo.resx">
+      <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Veiculo\InserirVeiculo.resx">
       <DependentUpon>InserirVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo\Manutencao\ManutencaAprovar.resx">
+      <DependentUpon>ManutencaAprovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo\Manutencao\ManutencaoConsultar.resx">
+      <DependentUpon>ManutencaoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo\Manutencao\ManutencaoSolicitar.resx">
+      <DependentUpon>ManutencaoSolicitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viagem\AnularViagem.resx">
+      <DependentUpon>AnularViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viagem\ConsultarAlterarViagem.resx">
+      <DependentUpon>ConsultarAlterarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viagem\RegistrarViagem.resx">
+      <DependentUpon>RegistrarViagem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,5 +196,6 @@
       <Name>DbDllGenerico</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,12 +23,12 @@ namespace DigitalCar
 
         private void btnIncluirFuncionario_Click(object sender, EventArgs e)
         {
-            //Funcionario funcionario = new Funcionario();
-            //funcionario.Nome = textNome.Text;
+            Funcionario funcionario = new Funcionario();
+            funcionario.Nome = txtNome.Text;
 
             DBBaseEspecifica db = new DBBaseEspecifica();
 
-            db.Inserir(txtNome.Text);
+            db.Inserir(funcionario.Nome);
 
             MessageBox.Show("Funcionario Incluido com Sucesso!");
             this.Close();

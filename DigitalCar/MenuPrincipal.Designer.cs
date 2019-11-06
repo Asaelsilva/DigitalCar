@@ -30,28 +30,20 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inativarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuInserirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAtivarInativarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.veiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuInserirVeiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuConsultarVeiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.regeitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirRetirarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuSolicitarManutencaoVeiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuConsultarManutencaoVeiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAprovarRejeitarManutencaoVeiculo = new System.Windows.Forms.ToolStripMenuItem();
+            this.viagemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuRegistrarViagem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuConsultarAlterarViagem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAnularViagem = new System.Windows.Forms.ToolStripMenuItem();
             this.avisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enviarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programarAvisoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +81,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.funcionarioToolStripMenuItem,
             this.veiculoToolStripMenuItem,
-            this.estoqueToolStripMenuItem,
+            this.viagemToolStripMenuItem1,
             this.avisosToolStripMenuItem,
             this.sistemaToolStripMenuItem,
             this.ocorrenciaToolStripMenuItem,
@@ -107,173 +99,123 @@
             // 
             this.funcionarioToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.funcionarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.alterarToolStripMenuItem,
-            this.inativarToolStripMenuItem});
+            this.MenuInserirFuncionario,
+            this.MenuConsultarFuncionario,
+            this.MenuAtivarInativarFuncionario});
             this.funcionarioToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
             this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(136, 28);
             this.funcionarioToolStripMenuItem.Text = "Funcionario";
             this.funcionarioToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             // 
-            // inserirToolStripMenuItem
+            // MenuInserirFuncionario
             // 
-            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.inserirToolStripMenuItem.Text = "Inserir";
-            this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
+            this.MenuInserirFuncionario.Name = "MenuInserirFuncionario";
+            this.MenuInserirFuncionario.Size = new System.Drawing.Size(225, 28);
+            this.MenuInserirFuncionario.Text = "Inserir";
+            this.MenuInserirFuncionario.Click += new System.EventHandler(this.MenuInserirFuncionario_Click);
             // 
-            // consultarToolStripMenuItem
+            // MenuConsultarFuncionario
             // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
+            this.MenuConsultarFuncionario.Name = "MenuConsultarFuncionario";
+            this.MenuConsultarFuncionario.Size = new System.Drawing.Size(225, 28);
+            this.MenuConsultarFuncionario.Text = "Consultar";
+            this.MenuConsultarFuncionario.Click += new System.EventHandler(this.MenuConsultarFuncionario_Click);
             // 
-            // alterarToolStripMenuItem
+            // MenuAtivarInativarFuncionario
             // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // inativarToolStripMenuItem
-            // 
-            this.inativarToolStripMenuItem.Name = "inativarToolStripMenuItem";
-            this.inativarToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.inativarToolStripMenuItem.Text = "Inativar";
-            this.inativarToolStripMenuItem.Click += new System.EventHandler(this.inativarToolStripMenuItem_Click);
+            this.MenuAtivarInativarFuncionario.Name = "MenuAtivarInativarFuncionario";
+            this.MenuAtivarInativarFuncionario.Size = new System.Drawing.Size(225, 28);
+            this.MenuAtivarInativarFuncionario.Text = "Ativar/Inativar";
+            this.MenuAtivarInativarFuncionario.Click += new System.EventHandler(this.MenuAtivarInativarFuncionario_Click);
             // 
             // veiculoToolStripMenuItem
             // 
             this.veiculoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem1,
-            this.consultarToolStripMenuItem1,
-            this.alterarToolStripMenuItem1,
-            this.manutençãoToolStripMenuItem,
-            this.viagemToolStripMenuItem});
+            this.MenuInserirVeiculo,
+            this.MenuConsultarVeiculo,
+            this.manutençãoToolStripMenuItem});
             this.veiculoToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.veiculoToolStripMenuItem.Name = "veiculoToolStripMenuItem";
             this.veiculoToolStripMenuItem.Size = new System.Drawing.Size(92, 28);
             this.veiculoToolStripMenuItem.Text = "Veiculo";
             // 
-            // inserirToolStripMenuItem1
+            // MenuInserirVeiculo
             // 
-            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
-            this.inserirToolStripMenuItem1.Text = "Inserir";
-            this.inserirToolStripMenuItem1.Click += new System.EventHandler(this.inserirToolStripMenuItem1_Click);
+            this.MenuInserirVeiculo.Name = "MenuInserirVeiculo";
+            this.MenuInserirVeiculo.Size = new System.Drawing.Size(216, 28);
+            this.MenuInserirVeiculo.Text = "Inserir";
+            this.MenuInserirVeiculo.Click += new System.EventHandler(this.MenuInserirVeiculo_Click);
             // 
-            // consultarToolStripMenuItem1
+            // MenuConsultarVeiculo
             // 
-            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
-            this.consultarToolStripMenuItem1.Text = "Consultar";
-            // 
-            // alterarToolStripMenuItem1
-            // 
-            this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
-            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
-            this.alterarToolStripMenuItem1.Text = "Alterar";
+            this.MenuConsultarVeiculo.Name = "MenuConsultarVeiculo";
+            this.MenuConsultarVeiculo.Size = new System.Drawing.Size(216, 28);
+            this.MenuConsultarVeiculo.Text = "Consultar";
+            this.MenuConsultarVeiculo.Click += new System.EventHandler(this.MenuConsultarVeiculo_Click);
             // 
             // manutençãoToolStripMenuItem
             // 
             this.manutençãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem2,
-            this.consultarToolStripMenuItem2,
-            this.alterarToolStripMenuItem3,
-            this.excluirToolStripMenuItem1,
-            this.regeitarToolStripMenuItem});
+            this.MenuSolicitarManutencaoVeiculo,
+            this.MenuConsultarManutencaoVeiculo,
+            this.MenuAprovarRejeitarManutencaoVeiculo});
             this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
-            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.manutençãoToolStripMenuItem.Text = "Manutenção ";
             // 
-            // inserirToolStripMenuItem2
+            // MenuSolicitarManutencaoVeiculo
             // 
-            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
-            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(186, 28);
-            this.inserirToolStripMenuItem2.Text = "Solicitar";
+            this.MenuSolicitarManutencaoVeiculo.Name = "MenuSolicitarManutencaoVeiculo";
+            this.MenuSolicitarManutencaoVeiculo.Size = new System.Drawing.Size(247, 28);
+            this.MenuSolicitarManutencaoVeiculo.Text = "Solicitar";
+            this.MenuSolicitarManutencaoVeiculo.Click += new System.EventHandler(this.MenuSolicitarManutencaoVeiculo_Click);
             // 
-            // consultarToolStripMenuItem2
+            // MenuConsultarManutencaoVeiculo
             // 
-            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(186, 28);
-            this.consultarToolStripMenuItem2.Text = "Consultar";
+            this.MenuConsultarManutencaoVeiculo.Name = "MenuConsultarManutencaoVeiculo";
+            this.MenuConsultarManutencaoVeiculo.Size = new System.Drawing.Size(247, 28);
+            this.MenuConsultarManutencaoVeiculo.Text = "Consultar";
+            this.MenuConsultarManutencaoVeiculo.Click += new System.EventHandler(this.MenuConsultarManutencaoVeiculo_Click);
             // 
-            // alterarToolStripMenuItem3
+            // MenuAprovarRejeitarManutencaoVeiculo
             // 
-            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
-            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(186, 28);
-            this.alterarToolStripMenuItem3.Text = "Alterar";
+            this.MenuAprovarRejeitarManutencaoVeiculo.Name = "MenuAprovarRejeitarManutencaoVeiculo";
+            this.MenuAprovarRejeitarManutencaoVeiculo.Size = new System.Drawing.Size(247, 28);
+            this.MenuAprovarRejeitarManutencaoVeiculo.Text = "Aprovar/Rejeitar";
+            this.MenuAprovarRejeitarManutencaoVeiculo.Click += new System.EventHandler(this.MenuAprovarRejeitarManutencaoVeiculo_Click);
             // 
-            // excluirToolStripMenuItem1
+            // viagemToolStripMenuItem1
             // 
-            this.excluirToolStripMenuItem1.Name = "excluirToolStripMenuItem1";
-            this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(186, 28);
-            this.excluirToolStripMenuItem1.Text = "Aprovar";
+            this.viagemToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuRegistrarViagem,
+            this.MenuConsultarAlterarViagem,
+            this.MenuAnularViagem});
+            this.viagemToolStripMenuItem1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.viagemToolStripMenuItem1.Name = "viagemToolStripMenuItem1";
+            this.viagemToolStripMenuItem1.Size = new System.Drawing.Size(93, 28);
+            this.viagemToolStripMenuItem1.Text = "Viagem";
             // 
-            // regeitarToolStripMenuItem
+            // MenuRegistrarViagem
             // 
-            this.regeitarToolStripMenuItem.Name = "regeitarToolStripMenuItem";
-            this.regeitarToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
-            this.regeitarToolStripMenuItem.Text = "Regeitar";
+            this.MenuRegistrarViagem.Name = "MenuRegistrarViagem";
+            this.MenuRegistrarViagem.Size = new System.Drawing.Size(255, 28);
+            this.MenuRegistrarViagem.Text = "Registrar";
+            this.MenuRegistrarViagem.Click += new System.EventHandler(this.MenuRegistrarViagem_Click);
             // 
-            // viagemToolStripMenuItem
+            // MenuConsultarAlterarViagem
             // 
-            this.viagemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarToolStripMenuItem,
-            this.consultarToolStripMenuItem3,
-            this.alterarToolStripMenuItem2,
-            this.excluirToolStripMenuItem});
-            this.viagemToolStripMenuItem.Name = "viagemToolStripMenuItem";
-            this.viagemToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.viagemToolStripMenuItem.Text = "Viagem";
+            this.MenuConsultarAlterarViagem.Name = "MenuConsultarAlterarViagem";
+            this.MenuConsultarAlterarViagem.Size = new System.Drawing.Size(255, 28);
+            this.MenuConsultarAlterarViagem.Text = "Consultar/Alterar";
+            this.MenuConsultarAlterarViagem.Click += new System.EventHandler(this.MenuConsultarAlterarViagem_Click);
             // 
-            // registrarToolStripMenuItem
+            // MenuAnularViagem
             // 
-            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
-            this.registrarToolStripMenuItem.Text = "Registrar";
-            // 
-            // consultarToolStripMenuItem3
-            // 
-            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
-            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(186, 28);
-            this.consultarToolStripMenuItem3.Text = "Consultar";
-            // 
-            // alterarToolStripMenuItem2
-            // 
-            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
-            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(186, 28);
-            this.alterarToolStripMenuItem2.Text = "Alterar";
-            // 
-            // excluirToolStripMenuItem
-            // 
-            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
-            this.excluirToolStripMenuItem.Text = "Excluir";
-            // 
-            // estoqueToolStripMenuItem
-            // 
-            this.estoqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirRetirarToolStripMenuItem,
-            this.cadastrarProdutoToolStripMenuItem});
-            this.estoqueToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(102, 28);
-            this.estoqueToolStripMenuItem.Text = "Estoque";
-            // 
-            // inserirRetirarToolStripMenuItem
-            // 
-            this.inserirRetirarToolStripMenuItem.Name = "inserirRetirarToolStripMenuItem";
-            this.inserirRetirarToolStripMenuItem.Size = new System.Drawing.Size(269, 28);
-            this.inserirRetirarToolStripMenuItem.Text = "Inserir/Retirar";
-            // 
-            // cadastrarProdutoToolStripMenuItem
-            // 
-            this.cadastrarProdutoToolStripMenuItem.Name = "cadastrarProdutoToolStripMenuItem";
-            this.cadastrarProdutoToolStripMenuItem.Size = new System.Drawing.Size(269, 28);
-            this.cadastrarProdutoToolStripMenuItem.Text = "Cadastrar Produto";
+            this.MenuAnularViagem.Name = "MenuAnularViagem";
+            this.MenuAnularViagem.Size = new System.Drawing.Size(255, 28);
+            this.MenuAnularViagem.Text = "Anular";
+            this.MenuAnularViagem.Click += new System.EventHandler(this.MenuAnularViagem_Click);
             // 
             // avisosToolStripMenuItem
             // 
@@ -501,28 +443,16 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inativarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuInserirFuncionario;
+        private System.Windows.Forms.ToolStripMenuItem MenuConsultarFuncionario;
+        private System.Windows.Forms.ToolStripMenuItem MenuAtivarInativarFuncionario;
         private System.Windows.Forms.ToolStripMenuItem veiculoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem MenuInserirVeiculo;
+        private System.Windows.Forms.ToolStripMenuItem MenuConsultarVeiculo;
         private System.Windows.Forms.ToolStripMenuItem manutençãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem regeitarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viagemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirRetirarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarProdutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuSolicitarManutencaoVeiculo;
+        private System.Windows.Forms.ToolStripMenuItem MenuConsultarManutencaoVeiculo;
+        private System.Windows.Forms.ToolStripMenuItem MenuAprovarRejeitarManutencaoVeiculo;
         private System.Windows.Forms.ToolStripMenuItem avisosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enviarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programarAvisoToolStripMenuItem;
@@ -551,6 +481,10 @@
         private System.Windows.Forms.ToolStripMenuItem ocorrenciaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem chamadoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viagemToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem MenuRegistrarViagem;
+        private System.Windows.Forms.ToolStripMenuItem MenuConsultarAlterarViagem;
+        private System.Windows.Forms.ToolStripMenuItem MenuAnularViagem;
     }
 }
 

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DigitalCar
+namespace DigitalCar.Viagem
 {
-    public partial class InativarFuncionario : Form
+    public partial class ConsultarAlterarViagem : Form
     {
-        public InativarFuncionario()
+        public ConsultarAlterarViagem()
         {
             InitializeComponent();
         }

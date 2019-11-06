@@ -21,5 +21,10 @@ namespace DigitalCar.Veiculo
         {
             this.Close();
         }
+
+        private void btnInserirVeiculo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

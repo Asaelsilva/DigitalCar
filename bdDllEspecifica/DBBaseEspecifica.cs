@@ -12,7 +12,7 @@ namespace bdDllEspecifica
         public void Inserir(string nome)
         {
             DBBase bd = new DBBase();
-            string Query = "INSERT INTO tb01(Nome)VALUES(" + "'" + nome + "'" + ")";
+            string Query = "INSERT INTO tb01(Nome)VALUES('" + nome + "')";
             bd.ExecuteInstrucoesNaBase(Query);
         }
 

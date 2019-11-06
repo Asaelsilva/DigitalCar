@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,9 +56,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
             this.label2.Location = new System.Drawing.Point(334, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.Size = new System.Drawing.Size(374, 21);
             this.label2.TabIndex = 52;
-            this.label2.Text = "Nome";
+            this.label2.Text = "Insira o Código do Funcionário, Nome ou CPF";
             // 
             // textBox2
             // 
@@ -69,9 +70,10 @@
             // 
             // btnIncluirFuncionario
             // 
-            this.btnIncluirFuncionario.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnIncluirFuncionario.BackColor = System.Drawing.Color.Navy;
             this.btnIncluirFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIncluirFuncionario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncluirFuncionario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncluirFuncionario.ForeColor = System.Drawing.Color.White;
             this.btnIncluirFuncionario.Location = new System.Drawing.Point(1099, 208);
             this.btnIncluirFuncionario.Name = "btnIncluirFuncionario";
             this.btnIncluirFuncionario.Size = new System.Drawing.Size(156, 37);
@@ -81,9 +83,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1111, 719);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 37);
@@ -99,7 +102,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(677, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(677, 433);
             this.dataGridView1.TabIndex = 58;
             // 
             // pictureBox1
@@ -111,11 +114,25 @@
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(842, 719);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(156, 37);
+            this.button2.TabIndex = 60;
+            this.button2.Text = "Alterar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // ConsultarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1421, 842);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnIncluirFuncionario);
@@ -141,5 +158,6 @@
         private System.Windows.Forms.Button btnIncluirFuncionario;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
     }
 }

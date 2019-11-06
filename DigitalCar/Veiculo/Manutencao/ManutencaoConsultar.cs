@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DigitalCar
+namespace DigitalCar.Veiculo
 {
-    public partial class InativarFuncionario : Form
+    public partial class ManutencaoConsultar : Form
     {
-        public InativarFuncionario()
+        public ManutencaoConsultar()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace DigitalCar
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnConsultarManutencao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
