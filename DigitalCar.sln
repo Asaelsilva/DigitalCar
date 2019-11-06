@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - DigitalCarAPI", "0 - Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllConfiguracao", "DllConfiguracao\DllConfiguracao.csproj", "{7CD5A7B3-0874-47DD-B092-34FC0DE8A8AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - DbEspecifica", "1 - DbEspecifica", "{E05D69B6-FB89-4A75-9C82-9326D3FB538A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - DbBase", "2 - DbBase", "{5F22E480-1415-4BA6-B827-A52368AF0596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - DBConfg", "3 - DBConfg", "{32A86E31-5EA6-44F1-9B73-DFD422799FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

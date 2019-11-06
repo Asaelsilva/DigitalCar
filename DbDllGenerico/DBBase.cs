@@ -18,12 +18,12 @@ namespace DbDllGenerico
             //@"data source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=SSPI; Initial Catalog=dbCrud";
             string Query = QuerySQL;
             SqlConnection con = new SqlConnection(strConxao);
-            SqlCommand sqlCommand = new SqlCommand(Query, con);
+            SqlCommand comando = new SqlCommand(Query, con);
 
             try
             {
                 con.Open();
-                sqlCommand.ExecuteNonQuery();
+                comando.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -34,10 +34,6 @@ namespace DbDllGenerico
             {
                 con.Close();
             }
-
-
         }
-
-
     }
 }

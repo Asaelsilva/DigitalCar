@@ -17,14 +17,19 @@ namespace DigitalCar
             InitializeComponent();
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void btnConsultarFuncionario_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+                     
     }
 }
