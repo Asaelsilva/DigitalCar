@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgResultadoPesquisaVeiculo = new System.Windows.Forms.DataGridView();
             this.btnConsultarFuncionario = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPlaca = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodigoPlaca = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgResultadoPesquisaVeiculo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgResultadoPesquisaVeiculo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(341, 318);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(677, 420);
-            this.dataGridView1.TabIndex = 65;
+            this.dgResultadoPesquisaVeiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgResultadoPesquisaVeiculo.Location = new System.Drawing.Point(341, 318);
+            this.dgResultadoPesquisaVeiculo.Name = "dgResultadoPesquisaVeiculo";
+            this.dgResultadoPesquisaVeiculo.RowHeadersWidth = 51;
+            this.dgResultadoPesquisaVeiculo.RowTemplate.Height = 24;
+            this.dgResultadoPesquisaVeiculo.Size = new System.Drawing.Size(677, 420);
+            this.dgResultadoPesquisaVeiculo.TabIndex = 65;
             // 
             // btnConsultarFuncionario
             // 
@@ -70,7 +70,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(220, 32);
             this.label11.TabIndex = 63;
-            this.label11.Text = "Consultar Veivulo";
+            this.label11.Text = "Consultar Veiculo";
             // 
             // pictureBox1
             // 
@@ -87,17 +87,17 @@
             this.lblPlaca.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
             this.lblPlaca.Location = new System.Drawing.Point(337, 145);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(54, 21);
+            this.lblPlaca.Size = new System.Drawing.Size(202, 21);
             this.lblPlaca.TabIndex = 61;
-            this.lblPlaca.Text = "Nome";
+            this.lblPlaca.Text = "Insira o Código ou placa";
             // 
-            // textBox2
+            // txtCodigoPlaca
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(341, 190);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 27);
-            this.textBox2.TabIndex = 60;
+            this.txtCodigoPlaca.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtCodigoPlaca.Location = new System.Drawing.Point(341, 190);
+            this.txtCodigoPlaca.Name = "txtCodigoPlaca";
+            this.txtCodigoPlaca.Size = new System.Drawing.Size(677, 27);
+            this.txtCodigoPlaca.TabIndex = 60;
             // 
             // btnVoltar
             // 
@@ -117,17 +117,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 762);
+            this.ClientSize = new System.Drawing.Size(1421, 793);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgResultadoPesquisaVeiculo);
             this.Controls.Add(this.btnConsultarFuncionario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPlaca);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCodigoPlaca);
             this.Name = "ConsultarVeiculo";
             this.Text = "ConsultarVeiculo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgResultadoPesquisaVeiculo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,12 +135,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgResultadoPesquisaVeiculo;
         private System.Windows.Forms.Button btnConsultarFuncionario;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblPlaca;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodigoPlaca;
         private System.Windows.Forms.Button btnVoltar;
     }
 }

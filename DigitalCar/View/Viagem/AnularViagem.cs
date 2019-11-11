@@ -21,5 +21,21 @@ namespace DigitalCar.Viagem
         {
             this.Close();
         }
+
+        private void AnularViagem_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        //void CompletaEndereco()
+        //{ 
+            
+        //}
+
+
+        //private void textBox1_Leave(object sender, EventArgs e)
+        //{
+        //    CompletaEndereco();
+        //}
     }
 }

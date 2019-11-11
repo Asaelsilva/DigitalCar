@@ -1,6 +1,8 @@
 ﻿using DigitalCar.Veiculo;
 using DigitalCar.Veiculo.Manutencao;
 using DigitalCar.Viagem;
+using DigitalCar.View.Aviso;
+using DigitalCar.View.Sistema;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -97,6 +99,47 @@ namespace DigitalCar
         {
             AnularViagem anularViagem = new AnularViagem();
             anularViagem.Show();
+        }
+
+
+        //====================== Metodos do Menu Aviso ========================
+        private void MenuEnviarAviso_Click(object sender, EventArgs e)
+        {
+            EnviarAviso enviarAviso = new EnviarAviso();
+            enviarAviso.Show();
+        }
+
+        private void MenuProgramarAviso_Click(object sender, EventArgs e)
+        {
+            ProgramarAviso programarAviso = new ProgramarAviso();
+            programarAviso.Show();
+        }
+
+        private void MenuConsultarAviso_Click(object sender, EventArgs e)
+        {
+            ConsultarAviso consultarAviso = new ConsultarAviso();
+            consultarAviso.Show();
+        }
+
+
+        //====================== Metodos do Menu Aviso ========================
+
+        private void menuIserirNovaCategoria_Click(object sender, EventArgs e)
+        {
+            InserirNovaCategoria inserirNovaCategoria = new InserirNovaCategoria();
+            inserirNovaCategoria.Show();
+        }
+
+        private void menuInserirNovaMarca_Click(object sender, EventArgs e)
+        {
+            InserirNovaMarca inserirNovaMarca = new InserirNovaMarca();
+            inserirNovaMarca.Show();
+        }
+
+        private void menuInserirNovoModelo_Click(object sender, EventArgs e)
+        {
+            InserirNovoModelo inserirNovoModelo = new InserirNovoModelo();
+            inserirNovoModelo.Show();
         }
     }
 }

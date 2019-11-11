@@ -10,15 +10,19 @@ namespace DigitalCar.Entities
     {
         public int Id { get; private set; }
         public string Nome { get; set; }
-        public int Cpf { get; set; }
-        public int Rg { get; set; }
+        public string Cpf { get; set; }
+        public string Rg { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Email { get; set; }
-        public int Telefone { get; set; }
-        public int Celular { get; set; }
+        public decimal Telefone { get; set; }
+        public decimal Celular { get; set; }
         public string Rua { get; set; }
+        public string Turno { get; set; }
+        public string Funcao { get; set; }
+        public string Status { get; set; }
         public int Numero { get; set; }
         public string Bairro { get; set; }
+        public string Cidade { get; set; }
         public int Cep { get; set; }
         public string UF { get; set; }
     }

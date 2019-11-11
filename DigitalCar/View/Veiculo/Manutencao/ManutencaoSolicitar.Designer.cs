@@ -34,18 +34,18 @@
             this.lblDataAgendada = new System.Windows.Forms.Label();
             this.dtDataAgendada = new System.Windows.Forms.DateTimePicker();
             this.lblDataConcluida = new System.Windows.Forms.Label();
-            this.dateTimeNascimento = new System.Windows.Forms.DateTimePicker();
+            this.dtDataConcluida = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnApvrovarManutencao = new System.Windows.Forms.Button();
+            this.btnSolicitarManutencao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtVeiculo = new System.Windows.Forms.TextBox();
+            this.cboMecanica = new System.Windows.Forms.ComboBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.cboTipoDaManutencao = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,13 +105,13 @@
             this.lblDataConcluida.TabIndex = 76;
             this.lblDataConcluida.Text = "Data Concluida";
             // 
-            // dateTimeNascimento
+            // dtDataConcluida
             // 
-            this.dateTimeNascimento.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.dateTimeNascimento.Location = new System.Drawing.Point(1046, 216);
-            this.dateTimeNascimento.Name = "dateTimeNascimento";
-            this.dateTimeNascimento.Size = new System.Drawing.Size(276, 27);
-            this.dateTimeNascimento.TabIndex = 75;
+            this.dtDataConcluida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.dtDataConcluida.Location = new System.Drawing.Point(1046, 216);
+            this.dtDataConcluida.Name = "dtDataConcluida";
+            this.dtDataConcluida.Size = new System.Drawing.Size(276, 27);
+            this.dtDataConcluida.TabIndex = 75;
             // 
             // pictureBox1
             // 
@@ -128,7 +128,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1075, 665);
+            this.btnVoltar.Location = new System.Drawing.Point(1025, 663);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 84;
@@ -136,18 +136,18 @@
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // btnApvrovarManutencao
+            // btnSolicitarManutencao
             // 
-            this.btnApvrovarManutencao.BackColor = System.Drawing.Color.Navy;
-            this.btnApvrovarManutencao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApvrovarManutencao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApvrovarManutencao.ForeColor = System.Drawing.Color.White;
-            this.btnApvrovarManutencao.Location = new System.Drawing.Point(1258, 665);
-            this.btnApvrovarManutencao.Name = "btnApvrovarManutencao";
-            this.btnApvrovarManutencao.Size = new System.Drawing.Size(114, 37);
-            this.btnApvrovarManutencao.TabIndex = 83;
-            this.btnApvrovarManutencao.Text = "Aprovar";
-            this.btnApvrovarManutencao.UseVisualStyleBackColor = false;
+            this.btnSolicitarManutencao.BackColor = System.Drawing.Color.Navy;
+            this.btnSolicitarManutencao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSolicitarManutencao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitarManutencao.ForeColor = System.Drawing.Color.White;
+            this.btnSolicitarManutencao.Location = new System.Drawing.Point(1208, 663);
+            this.btnSolicitarManutencao.Name = "btnSolicitarManutencao";
+            this.btnSolicitarManutencao.Size = new System.Drawing.Size(114, 37);
+            this.btnSolicitarManutencao.TabIndex = 83;
+            this.btnSolicitarManutencao.Text = "Solicitar";
+            this.btnSolicitarManutencao.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -189,54 +189,54 @@
             this.label4.TabIndex = 88;
             this.label4.Text = "Mecânica";
             // 
-            // textBox1
+            // txtVeiculo
             // 
-            this.textBox1.Location = new System.Drawing.Point(388, 379);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 22);
-            this.textBox1.TabIndex = 90;
+            this.txtVeiculo.Location = new System.Drawing.Point(388, 379);
+            this.txtVeiculo.Name = "txtVeiculo";
+            this.txtVeiculo.Size = new System.Drawing.Size(276, 22);
+            this.txtVeiculo.TabIndex = 90;
             // 
-            // comboBox1
+            // cboMecanica
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(385, 509);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(276, 24);
-            this.comboBox1.TabIndex = 92;
+            this.cboMecanica.FormattingEnabled = true;
+            this.cboMecanica.Location = new System.Drawing.Point(385, 509);
+            this.cboMecanica.Name = "cboMecanica";
+            this.cboMecanica.Size = new System.Drawing.Size(276, 24);
+            this.cboMecanica.TabIndex = 92;
             // 
-            // comboBox2
+            // cboCategoria
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(716, 379);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(276, 24);
-            this.comboBox2.TabIndex = 93;
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(716, 379);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(276, 24);
+            this.cboCategoria.TabIndex = 93;
             // 
-            // comboBox3
+            // cboTipoDaManutencao
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(1046, 377);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(276, 24);
-            this.comboBox3.TabIndex = 94;
+            this.cboTipoDaManutencao.FormattingEnabled = true;
+            this.cboTipoDaManutencao.Location = new System.Drawing.Point(1046, 377);
+            this.cboTipoDaManutencao.Name = "cboTipoDaManutencao";
+            this.cboTipoDaManutencao.Size = new System.Drawing.Size(276, 24);
+            this.cboTipoDaManutencao.TabIndex = 94;
             // 
             // ManutencaoSolicitar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 760);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1534, 760);
+            this.Controls.Add(this.cboTipoDaManutencao);
+            this.Controls.Add(this.cboCategoria);
+            this.Controls.Add(this.cboMecanica);
+            this.Controls.Add(this.txtVeiculo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnApvrovarManutencao);
+            this.Controls.Add(this.btnSolicitarManutencao);
             this.Controls.Add(this.lblDataConcluida);
-            this.Controls.Add(this.dateTimeNascimento);
+            this.Controls.Add(this.dtDataConcluida);
             this.Controls.Add(this.lblDataAgendada);
             this.Controls.Add(this.dtDataAgendada);
             this.Controls.Add(this.lblDataSolicitada);
@@ -261,16 +261,16 @@
         private System.Windows.Forms.Label lblDataAgendada;
         private System.Windows.Forms.DateTimePicker dtDataAgendada;
         private System.Windows.Forms.Label lblDataConcluida;
-        private System.Windows.Forms.DateTimePicker dateTimeNascimento;
+        private System.Windows.Forms.DateTimePicker dtDataConcluida;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnApvrovarManutencao;
+        private System.Windows.Forms.Button btnSolicitarManutencao;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtVeiculo;
+        private System.Windows.Forms.ComboBox cboMecanica;
+        private System.Windows.Forms.ComboBox cboCategoria;
+        private System.Windows.Forms.ComboBox cboTipoDaManutencao;
     }
 }

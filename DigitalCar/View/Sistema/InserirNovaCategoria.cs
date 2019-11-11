@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DigitalCar.Veiculo
+namespace DigitalCar.View.Sistema
 {
-    public partial class InserirVeiculo : Form
+    public partial class InserirNovaCategoria : Form
     {
-        public InserirVeiculo()
+        public InserirNovaCategoria()
         {
             InitializeComponent();
         }
@@ -21,11 +21,5 @@ namespace DigitalCar.Veiculo
         {
             this.Close();
         }
-
-        private void btnInserirVeiculo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

@@ -45,14 +45,14 @@
             this.MenuConsultarAlterarViagem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuAnularViagem = new System.Windows.Forms.ToolStripMenuItem();
             this.avisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enviarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programarAvisoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuEnviarAviso = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuProgramarAviso = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuConsultarAviso = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.veiculoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirNovaCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirNovaMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirNovoModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuIserirNovaCategoria = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuInserirNovaMarca = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuInserirNovoModelo = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirNovoTipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarTiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -220,31 +220,34 @@
             // avisosToolStripMenuItem
             // 
             this.avisosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.enviarToolStripMenuItem,
-            this.programarAvisoToolStripMenuItem,
-            this.consultarToolStripMenuItem4});
+            this.MenuEnviarAviso,
+            this.MenuProgramarAviso,
+            this.MenuConsultarAviso});
             this.avisosToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.avisosToolStripMenuItem.Name = "avisosToolStripMenuItem";
             this.avisosToolStripMenuItem.Size = new System.Drawing.Size(86, 28);
             this.avisosToolStripMenuItem.Text = "Avisos";
             // 
-            // enviarToolStripMenuItem
+            // MenuEnviarAviso
             // 
-            this.enviarToolStripMenuItem.Name = "enviarToolStripMenuItem";
-            this.enviarToolStripMenuItem.Size = new System.Drawing.Size(250, 28);
-            this.enviarToolStripMenuItem.Text = "Enviar";
+            this.MenuEnviarAviso.Name = "MenuEnviarAviso";
+            this.MenuEnviarAviso.Size = new System.Drawing.Size(250, 28);
+            this.MenuEnviarAviso.Text = "Enviar";
+            this.MenuEnviarAviso.Click += new System.EventHandler(this.MenuEnviarAviso_Click);
             // 
-            // programarAvisoToolStripMenuItem
+            // MenuProgramarAviso
             // 
-            this.programarAvisoToolStripMenuItem.Name = "programarAvisoToolStripMenuItem";
-            this.programarAvisoToolStripMenuItem.Size = new System.Drawing.Size(250, 28);
-            this.programarAvisoToolStripMenuItem.Text = "Programar aviso";
+            this.MenuProgramarAviso.Name = "MenuProgramarAviso";
+            this.MenuProgramarAviso.Size = new System.Drawing.Size(250, 28);
+            this.MenuProgramarAviso.Text = "Programar aviso";
+            this.MenuProgramarAviso.Click += new System.EventHandler(this.MenuProgramarAviso_Click);
             // 
-            // consultarToolStripMenuItem4
+            // MenuConsultarAviso
             // 
-            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
-            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(250, 28);
-            this.consultarToolStripMenuItem4.Text = "Consultar";
+            this.MenuConsultarAviso.Name = "MenuConsultarAviso";
+            this.MenuConsultarAviso.Size = new System.Drawing.Size(250, 28);
+            this.MenuConsultarAviso.Text = "Consultar";
+            this.MenuConsultarAviso.Click += new System.EventHandler(this.MenuConsultarAviso_Click);
             // 
             // sistemaToolStripMenuItem
             // 
@@ -259,30 +262,33 @@
             // veiculoToolStripMenuItem1
             // 
             this.veiculoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirNovaCategoriaToolStripMenuItem,
-            this.inserirNovaMarcaToolStripMenuItem,
-            this.inserirNovoModeloToolStripMenuItem});
+            this.menuIserirNovaCategoria,
+            this.menuInserirNovaMarca,
+            this.menuInserirNovoModelo});
             this.veiculoToolStripMenuItem1.Name = "veiculoToolStripMenuItem1";
             this.veiculoToolStripMenuItem1.Size = new System.Drawing.Size(206, 28);
             this.veiculoToolStripMenuItem1.Text = "Veiculo";
             // 
-            // inserirNovaCategoriaToolStripMenuItem
+            // menuIserirNovaCategoria
             // 
-            this.inserirNovaCategoriaToolStripMenuItem.Name = "inserirNovaCategoriaToolStripMenuItem";
-            this.inserirNovaCategoriaToolStripMenuItem.Size = new System.Drawing.Size(300, 28);
-            this.inserirNovaCategoriaToolStripMenuItem.Text = "Inserir nova categoria";
+            this.menuIserirNovaCategoria.Name = "menuIserirNovaCategoria";
+            this.menuIserirNovaCategoria.Size = new System.Drawing.Size(300, 28);
+            this.menuIserirNovaCategoria.Text = "Inserir nova categoria";
+            this.menuIserirNovaCategoria.Click += new System.EventHandler(this.menuIserirNovaCategoria_Click);
             // 
-            // inserirNovaMarcaToolStripMenuItem
+            // menuInserirNovaMarca
             // 
-            this.inserirNovaMarcaToolStripMenuItem.Name = "inserirNovaMarcaToolStripMenuItem";
-            this.inserirNovaMarcaToolStripMenuItem.Size = new System.Drawing.Size(300, 28);
-            this.inserirNovaMarcaToolStripMenuItem.Text = "inserir nova marca";
+            this.menuInserirNovaMarca.Name = "menuInserirNovaMarca";
+            this.menuInserirNovaMarca.Size = new System.Drawing.Size(300, 28);
+            this.menuInserirNovaMarca.Text = "inserir nova marca";
+            this.menuInserirNovaMarca.Click += new System.EventHandler(this.menuInserirNovaMarca_Click);
             // 
-            // inserirNovoModeloToolStripMenuItem
+            // menuInserirNovoModelo
             // 
-            this.inserirNovoModeloToolStripMenuItem.Name = "inserirNovoModeloToolStripMenuItem";
-            this.inserirNovoModeloToolStripMenuItem.Size = new System.Drawing.Size(300, 28);
-            this.inserirNovoModeloToolStripMenuItem.Text = "Inserir novo modelo";
+            this.menuInserirNovoModelo.Name = "menuInserirNovoModelo";
+            this.menuInserirNovoModelo.Size = new System.Drawing.Size(300, 28);
+            this.menuInserirNovoModelo.Text = "Inserir novo modelo";
+            this.menuInserirNovoModelo.Click += new System.EventHandler(this.menuInserirNovoModelo_Click);
             // 
             // funcionarioToolStripMenuItem1
             // 
@@ -432,6 +438,7 @@
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Name = "MenuPrincipal";
             this.Text = "Menu Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -454,14 +461,14 @@
         private System.Windows.Forms.ToolStripMenuItem MenuConsultarManutencaoVeiculo;
         private System.Windows.Forms.ToolStripMenuItem MenuAprovarRejeitarManutencaoVeiculo;
         private System.Windows.Forms.ToolStripMenuItem avisosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enviarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem programarAvisoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem MenuEnviarAviso;
+        private System.Windows.Forms.ToolStripMenuItem MenuProgramarAviso;
+        private System.Windows.Forms.ToolStripMenuItem MenuConsultarAviso;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem veiculoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem inserirNovaCategoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirNovaMarcaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirNovoModeloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuIserirNovaCategoria;
+        private System.Windows.Forms.ToolStripMenuItem menuInserirNovaMarca;
+        private System.Windows.Forms.ToolStripMenuItem menuInserirNovoModelo;
         private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem inserirNovoTipoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarTiposToolStripMenuItem;

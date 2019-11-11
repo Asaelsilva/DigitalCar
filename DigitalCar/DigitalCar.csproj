@@ -45,14 +45,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Aviso\ConsultarAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Aviso\ConsultarAviso.Designer.cs">
+      <DependentUpon>ConsultarAviso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Aviso\EnviarAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Aviso\EnviarAviso.Designer.cs">
+      <DependentUpon>EnviarAviso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Aviso\ProgramarAviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Aviso\ProgramarAviso.Designer.cs">
+      <DependentUpon>ProgramarAviso.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Funcionario\ConsultarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Funcionario\ConsultarFuncionario.Designer.cs">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Funcao.cs" />
-    <Compile Include="Entities\Funcionario.cs" />
+    <Compile Include="Model\Entities\Funcao.cs" />
+    <Compile Include="Model\Entities\Funcionario.cs" />
     <Compile Include="View\Funcionario\InativarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +91,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Sistema\InserirNovaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sistema\InserirNovaCategoria.Designer.cs">
+      <DependentUpon>InserirNovaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\InserirNovaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sistema\InserirNovaMarca.Designer.cs">
+      <DependentUpon>InserirNovaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\InserirNovoModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sistema\InserirNovoModelo.Designer.cs">
+      <DependentUpon>InserirNovoModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Veiculo\ConsultarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +157,15 @@
     <Compile Include="View\Viagem\RegistrarViagem.Designer.cs">
       <DependentUpon>RegistrarViagem.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Aviso\ConsultarAviso.resx">
+      <DependentUpon>ConsultarAviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Aviso\EnviarAviso.resx">
+      <DependentUpon>EnviarAviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Aviso\ProgramarAviso.resx">
+      <DependentUpon>ProgramarAviso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Funcionario\ConsultarFuncionario.resx">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +188,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Sistema\InserirNovaCategoria.resx">
+      <DependentUpon>InserirNovaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\InserirNovaMarca.resx">
+      <DependentUpon>InserirNovaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\InserirNovoModelo.resx">
+      <DependentUpon>InserirNovoModelo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Veiculo\ConsultarVeiculo.resx">
       <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,7 +251,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

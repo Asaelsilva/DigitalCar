@@ -32,12 +32,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblPlaca = new System.Windows.Forms.Label();
             this.txtPlaca = new System.Windows.Forms.TextBox();
-            this.dateTimeNascimento = new System.Windows.Forms.DateTimePicker();
             this.lblAnoModelo = new System.Windows.Forms.Label();
             this.lblAnoFabricacao = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblCor = new System.Windows.Forms.Label();
-            this.txtCor = new System.Windows.Forms.TextBox();
             this.lblRenavan = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblQuilometragem = new System.Windows.Forms.Label();
@@ -50,6 +47,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cboCor = new System.Windows.Forms.ComboBox();
+            this.cboPropriedade = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +80,7 @@
             // 
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lblPlaca.Location = new System.Drawing.Point(383, 334);
+            this.lblPlaca.Location = new System.Drawing.Point(1262, 168);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(55, 21);
             this.lblPlaca.TabIndex = 65;
@@ -85,24 +89,16 @@
             // txtPlaca
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtPlaca.Location = new System.Drawing.Point(387, 379);
+            this.txtPlaca.Location = new System.Drawing.Point(1266, 213);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(154, 27);
             this.txtPlaca.TabIndex = 64;
-            // 
-            // dateTimeNascimento
-            // 
-            this.dateTimeNascimento.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.dateTimeNascimento.Location = new System.Drawing.Point(690, 379);
-            this.dateTimeNascimento.Name = "dateTimeNascimento";
-            this.dateTimeNascimento.Size = new System.Drawing.Size(313, 27);
-            this.dateTimeNascimento.TabIndex = 69;
             // 
             // lblAnoModelo
             // 
             this.lblAnoModelo.AutoSize = true;
             this.lblAnoModelo.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lblAnoModelo.Location = new System.Drawing.Point(686, 334);
+            this.lblAnoModelo.Location = new System.Drawing.Point(374, 312);
             this.lblAnoModelo.Name = "lblAnoModelo";
             this.lblAnoModelo.Size = new System.Drawing.Size(102, 21);
             this.lblAnoModelo.TabIndex = 70;
@@ -112,19 +108,11 @@
             // 
             this.lblAnoFabricacao.AutoSize = true;
             this.lblAnoFabricacao.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lblAnoFabricacao.Location = new System.Drawing.Point(1091, 334);
+            this.lblAnoFabricacao.Location = new System.Drawing.Point(686, 312);
             this.lblAnoFabricacao.Name = "lblAnoFabricacao";
             this.lblAnoFabricacao.Size = new System.Drawing.Size(134, 21);
             this.lblAnoFabricacao.TabIndex = 72;
             this.lblAnoFabricacao.Text = "Ano Fabricação";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(1095, 379);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(313, 27);
-            this.dateTimePicker1.TabIndex = 71;
             // 
             // lblCor
             // 
@@ -136,19 +124,11 @@
             this.lblCor.TabIndex = 74;
             this.lblCor.Text = "Cor";
             // 
-            // txtCor
-            // 
-            this.txtCor.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtCor.Location = new System.Drawing.Point(387, 529);
-            this.txtCor.Name = "txtCor";
-            this.txtCor.Size = new System.Drawing.Size(154, 27);
-            this.txtCor.TabIndex = 73;
-            // 
             // lblRenavan
             // 
             this.lblRenavan.AutoSize = true;
             this.lblRenavan.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lblRenavan.Location = new System.Drawing.Point(686, 484);
+            this.lblRenavan.Location = new System.Drawing.Point(1035, 309);
             this.lblRenavan.Name = "lblRenavan";
             this.lblRenavan.Size = new System.Drawing.Size(78, 21);
             this.lblRenavan.TabIndex = 76;
@@ -157,16 +137,16 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox1.Location = new System.Drawing.Point(690, 529);
+            this.textBox1.Location = new System.Drawing.Point(1039, 354);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 27);
+            this.textBox1.Size = new System.Drawing.Size(381, 27);
             this.textBox1.TabIndex = 75;
             // 
             // lblQuilometragem
             // 
             this.lblQuilometragem.AutoSize = true;
             this.lblQuilometragem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lblQuilometragem.Location = new System.Drawing.Point(1011, 484);
+            this.lblQuilometragem.Location = new System.Drawing.Point(645, 483);
             this.lblQuilometragem.Name = "lblQuilometragem";
             this.lblQuilometragem.Size = new System.Drawing.Size(39, 21);
             this.lblQuilometragem.TabIndex = 78;
@@ -175,7 +155,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(1015, 529);
+            this.textBox2.Location = new System.Drawing.Point(649, 528);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(154, 27);
             this.textBox2.TabIndex = 77;
@@ -186,7 +166,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1097, 697);
+            this.btnVoltar.Location = new System.Drawing.Point(1123, 693);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 82;
@@ -200,7 +180,7 @@
             this.btnInserirVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInserirVeiculo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInserirVeiculo.ForeColor = System.Drawing.Color.White;
-            this.btnInserirVeiculo.Location = new System.Drawing.Point(1280, 697);
+            this.btnInserirVeiculo.Location = new System.Drawing.Point(1306, 693);
             this.btnInserirVeiculo.Name = "btnInserirVeiculo";
             this.btnInserirVeiculo.Size = new System.Drawing.Size(114, 37);
             this.btnInserirVeiculo.TabIndex = 81;
@@ -211,7 +191,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(387, 227);
+            this.comboBox1.Location = new System.Drawing.Point(378, 213);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(154, 24);
             this.comboBox1.TabIndex = 83;
@@ -219,7 +199,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(690, 227);
+            this.comboBox2.Location = new System.Drawing.Point(680, 213);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(195, 24);
             this.comboBox2.TabIndex = 84;
@@ -227,7 +207,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(1095, 218);
+            this.comboBox3.Location = new System.Drawing.Point(974, 216);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(196, 24);
             this.comboBox3.TabIndex = 85;
@@ -236,7 +216,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(383, 176);
+            this.label1.Location = new System.Drawing.Point(383, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 86;
@@ -246,7 +226,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(686, 176);
+            this.label2.Location = new System.Drawing.Point(676, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 21);
             this.label2.TabIndex = 87;
@@ -256,17 +236,84 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(1093, 176);
+            this.label3.Location = new System.Drawing.Point(972, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 21);
             this.label3.TabIndex = 88;
             this.label3.Text = "Modelo";
             // 
+            // cboCor
+            // 
+            this.cboCor.FormattingEnabled = true;
+            this.cboCor.Location = new System.Drawing.Point(378, 531);
+            this.cboCor.Name = "cboCor";
+            this.cboCor.Size = new System.Drawing.Size(181, 24);
+            this.cboCor.TabIndex = 89;
+            // 
+            // cboPropriedade
+            // 
+            this.cboPropriedade.FormattingEnabled = true;
+            this.cboPropriedade.Location = new System.Drawing.Point(898, 528);
+            this.cboPropriedade.Name = "cboPropriedade";
+            this.cboPropriedade.Size = new System.Drawing.Size(215, 24);
+            this.cboPropriedade.TabIndex = 90;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label4.Location = new System.Drawing.Point(896, 483);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 21);
+            this.label4.TabIndex = 91;
+            this.label4.Text = "Propriedade";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label5.Location = new System.Drawing.Point(1236, 484);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 21);
+            this.label5.TabIndex = 93;
+            this.label5.Text = "Status";
+            // 
+            // cboStatus
+            // 
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Location = new System.Drawing.Point(1228, 528);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(192, 24);
+            this.cboStatus.TabIndex = 92;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(378, 357);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(131, 24);
+            this.comboBox4.TabIndex = 94;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(680, 360);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(144, 24);
+            this.comboBox5.TabIndex = 95;
+            // 
             // InserirVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1790, 793);
+            this.ClientSize = new System.Drawing.Size(1497, 794);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cboStatus);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboPropriedade);
+            this.Controls.Add(this.cboCor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -280,11 +327,8 @@
             this.Controls.Add(this.lblRenavan);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblCor);
-            this.Controls.Add(this.txtCor);
             this.Controls.Add(this.lblAnoFabricacao);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblAnoModelo);
-            this.Controls.Add(this.dateTimeNascimento);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblPlaca);
             this.Controls.Add(this.txtPlaca);
@@ -303,12 +347,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblPlaca;
         private System.Windows.Forms.TextBox txtPlaca;
-        private System.Windows.Forms.DateTimePicker dateTimeNascimento;
         private System.Windows.Forms.Label lblAnoModelo;
         private System.Windows.Forms.Label lblAnoFabricacao;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lblCor;
-        private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.Label lblRenavan;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblQuilometragem;
@@ -321,5 +362,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboCor;
+        private System.Windows.Forms.ComboBox cboPropriedade;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboStatus;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }

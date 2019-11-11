@@ -32,7 +32,15 @@
             this.btnAprovarManutencao = new System.Windows.Forms.Button();
             this.lblonsultar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBoxResultadoPesquisa = new System.Windows.Forms.GroupBox();
+            this.dgResultado = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxResultadoPesquisa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgResultado)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -41,7 +49,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1080, 685);
+            this.btnVoltar.Location = new System.Drawing.Point(1103, 780);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 90;
@@ -55,7 +63,7 @@
             this.btnAprovarManutencao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAprovarManutencao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAprovarManutencao.ForeColor = System.Drawing.Color.White;
-            this.btnAprovarManutencao.Location = new System.Drawing.Point(1263, 685);
+            this.btnAprovarManutencao.Location = new System.Drawing.Point(1286, 780);
             this.btnAprovarManutencao.Name = "btnAprovarManutencao";
             this.btnAprovarManutencao.Size = new System.Drawing.Size(114, 37);
             this.btnAprovarManutencao.TabIndex = 89;
@@ -82,11 +90,72 @@
             this.pictureBox1.TabIndex = 87;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBoxResultadoPesquisa
+            // 
+            this.groupBoxResultadoPesquisa.Controls.Add(this.label1);
+            this.groupBoxResultadoPesquisa.Controls.Add(this.comboBox1);
+            this.groupBoxResultadoPesquisa.Controls.Add(this.dgResultado);
+            this.groupBoxResultadoPesquisa.Location = new System.Drawing.Point(345, 335);
+            this.groupBoxResultadoPesquisa.Name = "groupBoxResultadoPesquisa";
+            this.groupBoxResultadoPesquisa.Size = new System.Drawing.Size(792, 410);
+            this.groupBoxResultadoPesquisa.TabIndex = 93;
+            this.groupBoxResultadoPesquisa.TabStop = false;
+            this.groupBoxResultadoPesquisa.Text = "Manutenção Solicitada";
+            // 
+            // dgResultado
+            // 
+            this.dgResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgResultado.Location = new System.Drawing.Point(22, 73);
+            this.dgResultado.Name = "dgResultado";
+            this.dgResultado.RowHeadersWidth = 51;
+            this.dgResultado.RowTemplate.Height = 24;
+            this.dgResultado.Size = new System.Drawing.Size(677, 150);
+            this.dgResultado.TabIndex = 65;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(341, 188);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(374, 21);
+            this.label2.TabIndex = 92;
+            this.label2.Text = "Insira o Código do Funcionário, Nome ou CPF";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtBuscar.Location = new System.Drawing.Point(345, 243);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(685, 27);
+            this.txtBuscar.TabIndex = 91;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(183, 338);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(169, 24);
+            this.comboBox1.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label1.Location = new System.Drawing.Point(29, 341);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 21);
+            this.label1.TabIndex = 93;
+            this.label1.Text = "Manutenção:  ";
+            // 
             // ManutencaAprovar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1415, 765);
+            this.ClientSize = new System.Drawing.Size(1424, 861);
+            this.Controls.Add(this.groupBoxResultadoPesquisa);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnAprovarManutencao);
             this.Controls.Add(this.lblonsultar);
@@ -94,6 +163,9 @@
             this.Name = "ManutencaAprovar";
             this.Text = "ManutencaAprovar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBoxResultadoPesquisa.ResumeLayout(false);
+            this.groupBoxResultadoPesquisa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +177,11 @@
         private System.Windows.Forms.Button btnAprovarManutencao;
         private System.Windows.Forms.Label lblonsultar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBoxResultadoPesquisa;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dgResultado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBuscar;
     }
 }
