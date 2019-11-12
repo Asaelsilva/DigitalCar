@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Enums\EnumsEnti.cs" />
     <Compile Include="View\Aviso\ConsultarAviso.cs">
       <SubType>Form</SubType>
     </Compile>

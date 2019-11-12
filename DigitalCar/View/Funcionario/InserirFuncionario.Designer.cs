@@ -83,7 +83,8 @@
             this.btnVoltar.Location = new System.Drawing.Point(1061, 746);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 46;
+            this.btnVoltar.TabIndex = 19;
+            this.btnVoltar.TabStop = false;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -97,7 +98,8 @@
             this.btnIncluirFuncionario.Location = new System.Drawing.Point(1244, 746);
             this.btnIncluirFuncionario.Name = "btnIncluirFuncionario";
             this.btnIncluirFuncionario.Size = new System.Drawing.Size(114, 37);
-            this.btnIncluirFuncionario.TabIndex = 45;
+            this.btnIncluirFuncionario.TabIndex = 18;
+            this.btnIncluirFuncionario.TabStop = false;
             this.btnIncluirFuncionario.Text = "Incluir";
             this.btnIncluirFuncionario.UseVisualStyleBackColor = false;
             this.btnIncluirFuncionario.Click += new System.EventHandler(this.btnIncluirFuncionario_Click);
@@ -148,7 +150,7 @@
             this.cboUF.Location = new System.Drawing.Point(302, 193);
             this.cboUF.Name = "cboUF";
             this.cboUF.Size = new System.Drawing.Size(76, 27);
-            this.cboUF.TabIndex = 73;
+            this.cboUF.TabIndex = 13;
             // 
             // lbCep
             // 
@@ -166,7 +168,7 @@
             this.txtCep.Location = new System.Drawing.Point(38, 193);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(179, 27);
-            this.txtCep.TabIndex = 71;
+            this.txtCep.TabIndex = 12;
             // 
             // txtCidade
             // 
@@ -174,7 +176,7 @@
             this.txtCidade.Location = new System.Drawing.Point(452, 188);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(496, 27);
-            this.txtCidade.TabIndex = 69;
+            this.txtCidade.TabIndex = 14;
             // 
             // txtBairro
             // 
@@ -182,7 +184,7 @@
             this.txtBairro.Location = new System.Drawing.Point(782, 322);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(535, 27);
-            this.txtBairro.TabIndex = 67;
+            this.txtBairro.TabIndex = 17;
             // 
             // txtNumero
             // 
@@ -190,7 +192,7 @@
             this.txtNumero.Location = new System.Drawing.Point(628, 322);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(94, 27);
-            this.txtNumero.TabIndex = 65;
+            this.txtNumero.TabIndex = 16;
             // 
             // txtRua
             // 
@@ -198,7 +200,7 @@
             this.txtRua.Location = new System.Drawing.Point(37, 322);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(516, 27);
-            this.txtRua.TabIndex = 63;
+            this.txtRua.TabIndex = 15;
             // 
             // lbCidade
             // 
@@ -309,7 +311,7 @@
             this.dtNascimento.Location = new System.Drawing.Point(297, 335);
             this.dtNascimento.Name = "dtNascimento";
             this.dtNascimento.Size = new System.Drawing.Size(236, 27);
-            this.dtNascimento.TabIndex = 68;
+            this.dtNascimento.TabIndex = 4;
             // 
             // lbStatus
             // 
@@ -332,7 +334,7 @@
             this.cboStatus.Location = new System.Drawing.Point(681, 475);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(180, 27);
-            this.cboStatus.TabIndex = 66;
+            this.cboStatus.TabIndex = 8;
             // 
             // lbTurno
             // 
@@ -356,7 +358,7 @@
             this.cboTurno.Location = new System.Drawing.Point(52, 475);
             this.cboTurno.Name = "cboTurno";
             this.cboTurno.Size = new System.Drawing.Size(180, 27);
-            this.cboTurno.TabIndex = 64;
+            this.cboTurno.TabIndex = 6;
             // 
             // lbFuncao
             // 
@@ -380,7 +382,7 @@
             this.cboFuncao.Location = new System.Drawing.Point(371, 475);
             this.cboFuncao.Name = "cboFuncao";
             this.cboFuncao.Size = new System.Drawing.Size(180, 27);
-            this.cboFuncao.TabIndex = 62;
+            this.cboFuncao.TabIndex = 7;
             // 
             // lbEmail
             // 
@@ -398,43 +400,46 @@
             this.txtEmail.Location = new System.Drawing.Point(664, 335);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(668, 27);
-            this.txtEmail.TabIndex = 60;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtCelular
             // 
             this.txtCelular.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtCelular.Location = new System.Drawing.Point(1097, 477);
-            this.txtCelular.MaxLength = 17;
+            this.txtCelular.MaxLength = 15;
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(235, 27);
-            this.txtCelular.TabIndex = 58;
+            this.txtCelular.TabIndex = 10;
+            this.txtCelular.Text = "55 11 ";
             // 
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtTelefone.Location = new System.Drawing.Point(1097, 419);
-            this.txtTelefone.MaxLength = 15;
+            this.txtTelefone.MaxLength = 14;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(235, 27);
-            this.txtTelefone.TabIndex = 56;
+            this.txtTelefone.TabIndex = 9;
+            this.txtTelefone.Text = "55 11 ";
             // 
             // txtRg
             // 
             this.txtRg.AccessibleDescription = "";
             this.txtRg.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtRg.Location = new System.Drawing.Point(1119, 199);
+            this.txtRg.MaxLength = 9;
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(213, 27);
-            this.txtRg.TabIndex = 53;
+            this.txtRg.TabIndex = 3;
             // 
             // txtCpf
             // 
             this.txtCpf.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtCpf.Location = new System.Drawing.Point(830, 199);
-            this.txtCpf.MaxLength = 14;
+            this.txtCpf.MaxLength = 11;
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(213, 27);
-            this.txtCpf.TabIndex = 51;
+            this.txtCpf.TabIndex = 2;
             // 
             // txtNome
             // 
@@ -442,7 +447,7 @@
             this.txtNome.Location = new System.Drawing.Point(297, 199);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(453, 27);
-            this.txtNome.TabIndex = 49;
+            this.txtNome.TabIndex = 1;
             // 
             // lbCelular
             // 
@@ -512,7 +517,7 @@
             this.tcInserirFuncionario.Name = "tcInserirFuncionario";
             this.tcInserirFuncionario.SelectedIndex = 0;
             this.tcInserirFuncionario.Size = new System.Drawing.Size(1391, 635);
-            this.tcInserirFuncionario.TabIndex = 62;
+            this.tcInserirFuncionario.TabIndex = 11;
             // 
             // InserirFuncionario
             // 

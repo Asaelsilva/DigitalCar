@@ -33,9 +33,9 @@ namespace DigitalCar
             funcionario.Turno = cboTurno.Text;
             funcionario.Funcao = cboFuncao.Text;
             funcionario.Status = cboStatus.Text;
-            funcionario.Telefone = Convert.ToDecimal(txtTelefone.Text);
-            funcionario.Celular = Convert.ToDecimal(txtCelular.Text);
-            funcionario.Cep = Convert.ToInt32(txtCep.Text);
+            funcionario.Telefone = txtTelefone.Text;
+            funcionario.Celular = txtCelular.Text;
+            funcionario.Cep = txtCep.Text;
             funcionario.UF = cboUF.Text;
             funcionario.Cidade = txtCidade.Text;
             funcionario.Rua = txtRua.Text;

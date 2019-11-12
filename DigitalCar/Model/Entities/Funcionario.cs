@@ -14,8 +14,8 @@ namespace DigitalCar.Entities
         public string Rg { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Email { get; set; }
-        public decimal Telefone { get; set; }
-        public decimal Celular { get; set; }
+        public string Telefone { get; set; }
+        public string Celular { get; set; }
         public string Rua { get; set; }
         public string Turno { get; set; }
         public string Funcao { get; set; }
@@ -23,7 +23,7 @@ namespace DigitalCar.Entities
         public int Numero { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
-        public int Cep { get; set; }
+        public string Cep { get; set; }
         public string UF { get; set; }
     }
 }

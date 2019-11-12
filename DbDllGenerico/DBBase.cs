@@ -29,6 +29,7 @@ namespace DbDllGenerico
             {
                 string erro = ex.Message;
                 erro += " !!!";
+                Console.WriteLine(erro);
             }
             finally
             {
