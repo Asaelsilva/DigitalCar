@@ -24,6 +24,7 @@ namespace DbDllGenerico
             {
                 con.Open();
                 comando.ExecuteNonQuery();
+
             }
             catch (Exception ex)
             {

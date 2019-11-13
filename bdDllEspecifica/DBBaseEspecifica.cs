@@ -20,9 +20,12 @@ namespace bdDllEspecifica
             bd.ExecuteInstrucoesNaBase(Query);
         }
 
-        public void Consultar()
+        public void Consultar(string nome)
         {
+            DBBase banco = new DBBase();
+            string Query = "SELECT id_Funcionario,nome, cpf FROM Funcionario WHERE nome = '"+ nome + "'";
 
+            banco.ExecuteInstrucoesNaBase(Query);
         }
     }
 }

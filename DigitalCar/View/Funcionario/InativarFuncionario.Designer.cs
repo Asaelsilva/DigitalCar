@@ -48,6 +48,7 @@
             // 
             // dgResultado
             // 
+            this.dgResultado.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dgResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgResultado.Location = new System.Drawing.Point(22, 55);
             this.dgResultado.Name = "dgResultado";
@@ -184,6 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1420, 758);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
             this.Controls.Add(this.btnVoltar);

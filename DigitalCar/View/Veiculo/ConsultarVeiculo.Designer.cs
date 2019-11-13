@@ -41,6 +41,7 @@
             // 
             // dgResultadoPesquisaVeiculo
             // 
+            this.dgResultadoPesquisaVeiculo.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dgResultadoPesquisaVeiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgResultadoPesquisaVeiculo.Location = new System.Drawing.Point(341, 318);
             this.dgResultadoPesquisaVeiculo.Name = "dgResultadoPesquisaVeiculo";
@@ -48,6 +49,7 @@
             this.dgResultadoPesquisaVeiculo.RowTemplate.Height = 24;
             this.dgResultadoPesquisaVeiculo.Size = new System.Drawing.Size(677, 420);
             this.dgResultadoPesquisaVeiculo.TabIndex = 65;
+            this.dgResultadoPesquisaVeiculo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgResultadoPesquisaVeiculo_CellContentClick);
             // 
             // btnConsultarFuncionario
             // 
@@ -70,7 +72,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(220, 32);
             this.label11.TabIndex = 63;
-            this.label11.Text = "Consultar Veiculo";
+            this.label11.Text = "Consultar Veículo";
             // 
             // pictureBox1
             // 
@@ -117,6 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1421, 793);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dgResultadoPesquisaVeiculo);

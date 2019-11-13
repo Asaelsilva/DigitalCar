@@ -37,6 +37,7 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.groupBoxListaFuncionarios = new System.Windows.Forms.GroupBox();
             this.dgListaFuncionario = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxListaFuncionarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaFuncionario)).BeginInit();
@@ -68,7 +69,7 @@
             this.txtConsultarFuncionario.Location = new System.Drawing.Point(338, 208);
             this.txtConsultarFuncionario.Name = "txtConsultarFuncionario";
             this.txtConsultarFuncionario.Size = new System.Drawing.Size(677, 27);
-            this.txtConsultarFuncionario.TabIndex = 51;
+            this.txtConsultarFuncionario.TabIndex = 20;
             // 
             // btnConsultarFuncionario
             // 
@@ -76,10 +77,10 @@
             this.btnConsultarFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultarFuncionario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarFuncionario.ForeColor = System.Drawing.Color.White;
-            this.btnConsultarFuncionario.Location = new System.Drawing.Point(1167, 208);
+            this.btnConsultarFuncionario.Location = new System.Drawing.Point(1032, 201);
             this.btnConsultarFuncionario.Name = "btnConsultarFuncionario";
             this.btnConsultarFuncionario.Size = new System.Drawing.Size(156, 37);
-            this.btnConsultarFuncionario.TabIndex = 57;
+            this.btnConsultarFuncionario.TabIndex = 21;
             this.btnConsultarFuncionario.Text = "Consultar";
             this.btnConsultarFuncionario.UseVisualStyleBackColor = false;
             this.btnConsultarFuncionario.Click += new System.EventHandler(this.btnConsultarFuncionario_Click);
@@ -90,10 +91,10 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1167, 776);
+            this.btnVoltar.Location = new System.Drawing.Point(1032, 841);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(156, 37);
-            this.btnVoltar.TabIndex = 59;
+            this.btnVoltar.TabIndex = 23;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -113,10 +114,10 @@
             this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlterar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(521, 491);
+            this.btnAlterar.Location = new System.Drawing.Point(988, 268);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(156, 37);
-            this.btnAlterar.TabIndex = 60;
+            this.btnAlterar.TabIndex = 22;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
@@ -125,28 +126,40 @@
             // 
             this.groupBoxListaFuncionarios.Controls.Add(this.dgListaFuncionario);
             this.groupBoxListaFuncionarios.Controls.Add(this.btnAlterar);
-            this.groupBoxListaFuncionarios.Location = new System.Drawing.Point(338, 285);
+            this.groupBoxListaFuncionarios.Location = new System.Drawing.Point(38, 433);
             this.groupBoxListaFuncionarios.Name = "groupBoxListaFuncionarios";
-            this.groupBoxListaFuncionarios.Size = new System.Drawing.Size(761, 552);
+            this.groupBoxListaFuncionarios.Size = new System.Drawing.Size(1150, 311);
             this.groupBoxListaFuncionarios.TabIndex = 61;
             this.groupBoxListaFuncionarios.TabStop = false;
             this.groupBoxListaFuncionarios.Text = "Lista de Funcionarios";
             // 
             // dgListaFuncionario
             // 
+            this.dgListaFuncionario.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dgListaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgListaFuncionario.Location = new System.Drawing.Point(14, 46);
+            this.dgListaFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dgListaFuncionario.Location = new System.Drawing.Point(14, 63);
             this.dgListaFuncionario.Name = "dgListaFuncionario";
             this.dgListaFuncionario.RowHeadersWidth = 51;
             this.dgListaFuncionario.RowTemplate.Height = 24;
-            this.dgListaFuncionario.Size = new System.Drawing.Size(663, 426);
+            this.dgListaFuncionario.Size = new System.Drawing.Size(1064, 170);
             this.dgListaFuncionario.TabIndex = 59;
+            this.dgListaFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaFuncionario_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // ConsultarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1456, 904);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1260, 904);
             this.Controls.Add(this.groupBoxListaFuncionarios);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnConsultarFuncionario);
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.GroupBox groupBoxListaFuncionarios;
         private System.Windows.Forms.DataGridView dgListaFuncionario;
+        private System.Windows.Forms.DataGridViewButtonColumn Column1;
     }
 }
