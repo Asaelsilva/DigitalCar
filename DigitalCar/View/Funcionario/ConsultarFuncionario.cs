@@ -25,63 +25,74 @@ namespace DigitalCar
             Funcionario funcionario = new Funcionario();
             string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=DigitalCar";
             string Query;
-            Boolean falso = false;
+            bool falso = false;
+
+            //string total = "SELECT MAX(codigo_Funcionario) FROM Funcionario"
+
 
             if (this.txtConsultarFuncionario.Text == String.Empty && cboFiltro.Text == String.Empty)
             {
-                MessageBox.Show("Insira algum dado no campo");
+                MessageBox.Show("Escolha o filtro desejado e insira uma informação no campo ao lado!");
                 this.txtConsultarFuncionario.Focus();
                 return;
             }
 
-            if( cboFiltro.Text == "Codigo")
+            if (cboFiltro.Text == "Codigo" && this.txtConsultarFuncionario.Text.Length >= 2)
             {
+                MessageBox.Show("Funcionario nao enconrado");
+                falso = false;
+            }
+
+
+            if (cboFiltro.Text == "Codigo" && txtConsultarFuncionario.Text.Length < 2)
+            {
+                funcionario.Id = Convert.ToInt32(txtConsultarFuncionario.Text);
+                Query = "SELECT * FROM Funcionario WHERE codigo_Funcionario = '" + funcionario.Id + "'";
+                falso = true;
+            }
+            else if (cboFiltro.Text == "CPF" && txtConsultarFuncionario.Text.Length == 11)
+            {
+                funcionario.Cpf = txtConsultarFuncionario.Text;
+                Query = "SELECT * FROM Funcionario WHERE cpf = '" + funcionario.Cpf + "'";
                 falso = true;
             }
             else if (cboFiltro.Text == "Nome")
             {
-                falso = true;
-            }
-
-            if (cboFiltro.Text == "CPF")
-            {
-                falso = true;
-            }
-
-
-            if (cboFiltro.Text == "Codigo" && falso == true)
-            {
-                funcionario.Id = Convert.ToInt32(txtConsultarFuncionario.Text);
-                Query = "SELECT * FROM Funcionario WHERE codigo_Funcionario = '" + funcionario.Id + "'";
-            }
-            else if (cboFiltro.Text == "Nome" && falso == true)
-            {
                 funcionario.Nome = txtConsultarFuncionario.Text;
                 Query = "SELECT * FROM Funcionario WHERE nome = '" + funcionario.Nome + "'";
+                falso = true;
             }
             else
             {
-                funcionario.Cpf = txtConsultarFuncionario.Text;
-                Query = "SELECT * FROM Funcionario WHERE nome = '" + funcionario.Cpf + "'";
+                Query = null;
+                falso = false;
             }
-                       
-            
-            SqlConnection con = new SqlConnection(strConxao);
-            SqlDataAdapter da = new SqlDataAdapter(Query, con);
-            DataTable dt = new DataTable();
 
-            da.Fill(dt);
 
-            if(falso == true)
+            try
             {
-                dgListaFuncionario.DataSource = dt;
-            }
-            else
-            {
-                MessageBox.Show("Não foi possivel realizar a consulta!!! Verificar e inserir os dados novamente!");
-            }
+                SqlConnection con = new SqlConnection(strConxao);
+                SqlDataAdapter da = new SqlDataAdapter(Query, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
 
+                if (falso == true && Query != null)
+                {
+
+                    dgListaFuncionario.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                string erro = ex.Message;
+                erro += MessageBox.Show("Não foi possivel realizar a consulta!!! Verificar e inserir os dados novamente!");
+            }
+            finally
+            {
+
+            }
             
+
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -95,7 +106,7 @@ namespace DigitalCar
 
         private void dgListaFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=dbCrud";
+            string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=DigitalCar";
             string Query = "SELECT * FROM Funcionario ";
             SqlConnection con = new SqlConnection(strConxao);
             SqlDataAdapter da = new SqlDataAdapter(Query, con);

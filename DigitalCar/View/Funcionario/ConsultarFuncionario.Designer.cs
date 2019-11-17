@@ -70,7 +70,7 @@
             this.txtConsultarFuncionario.Location = new System.Drawing.Point(680, 208);
             this.txtConsultarFuncionario.Name = "txtConsultarFuncionario";
             this.txtConsultarFuncionario.Size = new System.Drawing.Size(485, 27);
-            this.txtConsultarFuncionario.TabIndex = 20;
+            this.txtConsultarFuncionario.TabIndex = 21;
             // 
             // btnConsultarFuncionario
             // 
@@ -81,7 +81,7 @@
             this.btnConsultarFuncionario.Location = new System.Drawing.Point(1197, 201);
             this.btnConsultarFuncionario.Name = "btnConsultarFuncionario";
             this.btnConsultarFuncionario.Size = new System.Drawing.Size(156, 37);
-            this.btnConsultarFuncionario.TabIndex = 21;
+            this.btnConsultarFuncionario.TabIndex = 22;
             this.btnConsultarFuncionario.Text = "Consultar";
             this.btnConsultarFuncionario.UseVisualStyleBackColor = false;
             this.btnConsultarFuncionario.Click += new System.EventHandler(this.btnConsultarFuncionario_Click);
@@ -95,7 +95,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(1032, 841);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(156, 37);
-            this.btnVoltar.TabIndex = 23;
+            this.btnVoltar.TabIndex = 24;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -118,7 +118,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(1159, 268);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(156, 37);
-            this.btnAlterar.TabIndex = 22;
+            this.btnAlterar.TabIndex = 23;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
@@ -156,7 +156,7 @@
             this.cboFiltro.Location = new System.Drawing.Point(454, 208);
             this.cboFiltro.Name = "cboFiltro";
             this.cboFiltro.Size = new System.Drawing.Size(187, 24);
-            this.cboFiltro.TabIndex = 62;
+            this.cboFiltro.TabIndex = 20;
             // 
             // label3
             // 

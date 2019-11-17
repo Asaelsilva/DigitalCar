@@ -16,6 +16,8 @@ namespace bdDllEspecifica
             string Query = "INSERT INTO Funcionario VALUES ('" + nome +  "' , '" + cpf + "', '" + rg + "', '" + datanascimento + "' , '" + email + "' , '" + turno + "' , " +
                 " '" + funcao + "' , '" + status + "' , '" + telefone + "' , '" + celular + "' , '" + cep + "' , '" + uf + "' , '" + cidade + "' , '" + rua + "' , " + numero + " , '" + bairro + "')";
             bd.ExecuteInstrucoesNaBase(Query);
+
+
         }
 
         public void Consultar(string nome)
