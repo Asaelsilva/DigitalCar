@@ -25,24 +25,36 @@ namespace DigitalCar
             Funcionario funcionario = new Funcionario();
             string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=DigitalCar";
             string Query;
-            Boolean falso = true;
+            Boolean falso = false;
 
             if (this.txtConsultarFuncionario.Text == String.Empty && cboFiltro.Text == String.Empty)
-
             {
+                MessageBox.Show("Insira algum dado no campo");
                 this.txtConsultarFuncionario.Focus();
-
                 return;
-
             }
 
-
-            if (cboFiltro.Text == "Codigo")
+            if( cboFiltro.Text == "Codigo")
             {
-                funcionario.Id = Convert.ToInt32(txtConsultarFuncionario.Text);
-                Query = "SELECT * FROM Funcionario WHERE codigo_Funcionario = '" + funcionario.Nome + "'";
+                falso = true;
             }
             else if (cboFiltro.Text == "Nome")
+            {
+                falso = true;
+            }
+
+            if (cboFiltro.Text == "CPF")
+            {
+                falso = true;
+            }
+
+
+            if (cboFiltro.Text == "Codigo" && falso == true)
+            {
+                funcionario.Id = Convert.ToInt32(txtConsultarFuncionario.Text);
+                Query = "SELECT * FROM Funcionario WHERE codigo_Funcionario = '" + funcionario.Id + "'";
+            }
+            else if (cboFiltro.Text == "Nome" && falso == true)
             {
                 funcionario.Nome = txtConsultarFuncionario.Text;
                 Query = "SELECT * FROM Funcionario WHERE nome = '" + funcionario.Nome + "'";
@@ -52,9 +64,8 @@ namespace DigitalCar
                 funcionario.Cpf = txtConsultarFuncionario.Text;
                 Query = "SELECT * FROM Funcionario WHERE nome = '" + funcionario.Cpf + "'";
             }
-                        
+                       
             
-            Query = "SELECT * FROM Funcionario WHERE nome = '" + funcionario.Nome + "'";
             SqlConnection con = new SqlConnection(strConxao);
             SqlDataAdapter da = new SqlDataAdapter(Query, con);
             DataTable dt = new DataTable();
