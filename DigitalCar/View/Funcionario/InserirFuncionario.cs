@@ -30,6 +30,7 @@ namespace DigitalCar
             funcionario.Rg = txtRg.Text;
             funcionario.DataNascimento = Convert.ToDateTime(dtNascimento.Text);
             funcionario.Email = txtEmail.Text;
+
             if (cboTurno.Text == "Manhã")
             {
                 funcionario.Turno = 1;
@@ -42,6 +43,8 @@ namespace DigitalCar
             {
                 funcionario.Turno = 3;
             }
+
+
 
             if (cboFuncao.Text == "Admin")
             {
