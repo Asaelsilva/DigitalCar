@@ -37,7 +37,7 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.groupBoxListaFuncionarios = new System.Windows.Forms.GroupBox();
             this.dgListaFuncionario = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboFiltro = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxListaFuncionarios.SuspendLayout();
@@ -146,17 +146,17 @@
             this.dgListaFuncionario.TabIndex = 59;
             this.dgListaFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaFuncionario_CellContentClick);
             // 
-            // comboBox1
+            // cboFiltro
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboFiltro.FormattingEnabled = true;
+            this.cboFiltro.Items.AddRange(new object[] {
             "Codigo",
             "Nome",
             "CPF"});
-            this.comboBox1.Location = new System.Drawing.Point(454, 208);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 24);
-            this.comboBox1.TabIndex = 62;
+            this.cboFiltro.Location = new System.Drawing.Point(454, 208);
+            this.cboFiltro.Name = "cboFiltro";
+            this.cboFiltro.Size = new System.Drawing.Size(187, 24);
+            this.cboFiltro.TabIndex = 62;
             // 
             // label3
             // 
@@ -175,7 +175,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1414, 904);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboFiltro);
             this.Controls.Add(this.groupBoxListaFuncionarios);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnConsultarFuncionario);
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.GroupBox groupBoxListaFuncionarios;
         private System.Windows.Forms.DataGridView dgListaFuncionario;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboFiltro;
         private System.Windows.Forms.Label label3;
     }
 }
