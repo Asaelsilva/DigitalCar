@@ -27,6 +27,15 @@ namespace DigitalCar
             string Query;
             Boolean falso = true;
 
+            if (this.txtConsultarFuncionario.Text == String.Empty && cboFiltro.Text == String.Empty)
+
+            {
+                this.txtConsultarFuncionario.Focus();
+
+                return;
+
+            }
+
 
             if (cboFiltro.Text == "Codigo")
             {
