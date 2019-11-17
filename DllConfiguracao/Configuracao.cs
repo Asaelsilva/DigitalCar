@@ -13,7 +13,7 @@ namespace DllConfiguracao
 
         public Configuracao()
         {
-           StrConfiguracao = ConfigurationManager.ConnectionStrings["dbCrud"].ConnectionString;
+           StrConfiguracao = ConfigurationManager.ConnectionStrings["DigitalCar"].ConnectionString;
         }
 
         

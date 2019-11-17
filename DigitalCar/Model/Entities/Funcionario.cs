@@ -17,9 +17,9 @@ namespace DigitalCar.Entities
         public string Telefone { get; set; }
         public string Celular { get; set; }
         public string Rua { get; set; }
-        public string Turno { get; set; }
-        public string Funcao { get; set; }
-        public string Status { get; set; }
+        public int Turno { get; set; }
+        public int Funcao { get; set; }
+        public int Status { get; set; }
         public int Numero { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }

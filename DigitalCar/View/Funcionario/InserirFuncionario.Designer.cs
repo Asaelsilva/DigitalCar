@@ -144,12 +144,36 @@
             this.cboUF.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboUF.FormattingEnabled = true;
             this.cboUF.Items.AddRange(new object[] {
-            "Manhã",
-            "Tarde ",
-            "Noite"});
+            "Acre (AC)",
+            "Alagoas (AL)",
+            "Amapá (AP)",
+            "Amazonas (AM)",
+            "Bahia (BA)",
+            "Ceará (CE)",
+            "Distrito Federal (DF)",
+            "Espírito Santo (ES)",
+            "Goiás (GO)",
+            "Maranhão (MA)",
+            "Mato Grosso (MT)",
+            "Mato Grosso do Sul (MS)",
+            "Minas Gerais (MG)",
+            "Pará (PA)",
+            "Paraíba (PB)",
+            "Paraná (PR)",
+            "Pernambuco (PE)",
+            "Piauí (PI)",
+            "Rio de Janeiro (RJ)",
+            "Rio Grande do Norte (RN)",
+            "Rio Grande do Sul (RS)",
+            "Rondônia (RO)",
+            "Roraima (RR)",
+            "Santa Catarina (SC)",
+            "São Paulo (SP)",
+            "Sergipe (SE)",
+            "Tocantins (TO)"});
             this.cboUF.Location = new System.Drawing.Point(302, 193);
             this.cboUF.Name = "cboUF";
-            this.cboUF.Size = new System.Drawing.Size(76, 27);
+            this.cboUF.Size = new System.Drawing.Size(251, 27);
             this.cboUF.TabIndex = 13;
             // 
             // lbCep
@@ -166,6 +190,7 @@
             // 
             this.txtCep.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtCep.Location = new System.Drawing.Point(38, 193);
+            this.txtCep.MaxLength = 8;
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(179, 27);
             this.txtCep.TabIndex = 12;
@@ -173,7 +198,7 @@
             // txtCidade
             // 
             this.txtCidade.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtCidade.Location = new System.Drawing.Point(452, 188);
+            this.txtCidade.Location = new System.Drawing.Point(628, 193);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(496, 27);
             this.txtCidade.TabIndex = 14;
@@ -206,7 +231,7 @@
             // 
             this.lbCidade.AutoSize = true;
             this.lbCidade.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.lbCidade.Location = new System.Drawing.Point(449, 139);
+            this.lbCidade.Location = new System.Drawing.Point(625, 144);
             this.lbCidade.Name = "lbCidade";
             this.lbCidade.Size = new System.Drawing.Size(66, 21);
             this.lbCidade.TabIndex = 70;
