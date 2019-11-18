@@ -15,7 +15,6 @@ namespace DbDllGenerico
             Configuracao configuracao = new Configuracao();
 
             string strConxao = configuracao.StrConfiguracao;
-            //@"data source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=SSPI; Initial Catalog=dbCrud";
             string Query = QuerySQL;
             SqlConnection con = new SqlConnection(strConxao);
             SqlCommand comando = new SqlCommand(Query, con);
