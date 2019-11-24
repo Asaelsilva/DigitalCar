@@ -33,11 +33,11 @@
             this.lblonsultar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxResultadoPesquisa = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dgResultado = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxResultadoPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgResultado)).BeginInit();
@@ -102,6 +102,24 @@
             this.groupBoxResultadoPesquisa.TabStop = false;
             this.groupBoxResultadoPesquisa.Text = "Manutenção Solicitada";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label1.Location = new System.Drawing.Point(29, 341);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 21);
+            this.label1.TabIndex = 93;
+            this.label1.Text = "Manutenção:  ";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(183, 338);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(169, 24);
+            this.comboBox1.TabIndex = 66;
+            // 
             // dgResultado
             // 
             this.dgResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -130,28 +148,11 @@
             this.txtBuscar.Size = new System.Drawing.Size(685, 27);
             this.txtBuscar.TabIndex = 91;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 338);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 24);
-            this.comboBox1.TabIndex = 66;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(29, 341);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 21);
-            this.label1.TabIndex = 93;
-            this.label1.Text = "Manutenção:  ";
-            // 
             // ManutencaAprovar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1424, 861);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
             this.Controls.Add(this.label2);

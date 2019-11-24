@@ -34,19 +34,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtRg = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbRg = new System.Windows.Forms.Label();
             this.lbCpf = new System.Windows.Forms.Label();
             this.lbNome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -60,13 +60,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -154,28 +154,60 @@
             this.tabPage1.Text = "Endereço Partida";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // textBox2
             // 
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1469, 374);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Endereço Destino";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.textBox2.AccessibleDescription = "";
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.textBox2.Location = new System.Drawing.Point(932, 243);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(308, 27);
+            this.textBox2.TabIndex = 111;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(851, 249);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 21);
+            this.label3.TabIndex = 112;
+            this.label3.Text = "CEP:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(675, 244);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 32);
+            this.comboBox1.TabIndex = 110;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(626, 249);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 21);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "UF: ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(113, 243);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(440, 27);
+            this.textBox1.TabIndex = 107;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 249);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 21);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "Cidade: ";
             // 
             // txtRg
             // 
@@ -232,60 +264,28 @@
             this.lbNome.TabIndex = 102;
             this.lbNome.Text = "Rua: ";
             // 
-            // textBox1
+            // tabPage2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(113, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(440, 27);
-            this.textBox1.TabIndex = 107;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 249);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 21);
-            this.label1.TabIndex = 108;
-            this.label1.Text = "Cidade: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(626, 249);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 21);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "UF: ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(675, 244);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 32);
-            this.comboBox1.TabIndex = 110;
-            // 
-            // textBox2
-            // 
-            this.textBox2.AccessibleDescription = "";
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(932, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 27);
-            this.textBox2.TabIndex = 111;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(851, 249);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 21);
-            this.label3.TabIndex = 112;
-            this.label3.Text = "CEP:";
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1469, 374);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Endereço Destino";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
@@ -414,6 +414,25 @@
             this.tabPage3.Text = "Complementar";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(47, 213);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 24);
+            this.label10.TabIndex = 138;
+            this.label10.Text = "Gastos";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(588, 289);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(178, 27);
+            this.textBox11.TabIndex = 137;
+            this.textBox11.Text = "R$";
+            // 
             // textBox10
             // 
             this.textBox10.AccessibleDescription = "";
@@ -462,29 +481,11 @@
             this.label15.TabIndex = 126;
             this.label15.Text = "Combustivel: ";
             // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(588, 289);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(178, 27);
-            this.textBox11.TabIndex = 137;
-            this.textBox11.Text = "R$";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(47, 213);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 24);
-            this.label10.TabIndex = 138;
-            this.label10.Text = "Gastos";
-            // 
             // RegistrarViagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1833, 750);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnVoltar);

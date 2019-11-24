@@ -90,6 +90,7 @@
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtPlaca.Location = new System.Drawing.Point(1266, 213);
+            this.txtPlaca.MaxLength = 7;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(154, 27);
             this.txtPlaca.TabIndex = 64;
@@ -138,6 +139,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.textBox1.Location = new System.Drawing.Point(1039, 354);
+            this.textBox1.MaxLength = 11;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(381, 27);
             this.textBox1.TabIndex = 75;
@@ -191,6 +193,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
             this.comboBox1.Location = new System.Drawing.Point(378, 213);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(154, 24);
@@ -199,6 +205,13 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Chevrolet",
+            "Hyundai ",
+            "Ford ",
+            "Renault",
+            "Volkswagen",
+            "Fiat"});
             this.comboBox2.Location = new System.Drawing.Point(680, 213);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(195, 24);
@@ -207,6 +220,17 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Onix",
+            "HB20",
+            "Ka",
+            "Prisma",
+            "Kwid",
+            "Gol ",
+            "Argo",
+            "Mobi",
+            "Ka Sedan",
+            "Sandero"});
             this.comboBox3.Location = new System.Drawing.Point(974, 216);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(196, 24);
@@ -216,7 +240,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(383, 162);
+            this.label1.Location = new System.Drawing.Point(374, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 86;
@@ -245,6 +269,76 @@
             // cboCor
             // 
             this.cboCor.FormattingEnabled = true;
+            this.cboCor.Items.AddRange(new object[] {
+            "Abóbora",
+            "Açafrão",
+            "Amarelo",
+            "Âmbar",
+            "Ameixa",
+            "Amêndoa",
+            "Ametista",
+            "Anil",
+            "Azul",
+            "Bege",
+            "Bordô",
+            "Branco",
+            "Bronze",
+            "Cáqui",
+            "Caramelo",
+            "Carmesim",
+            "Carmim",
+            "Castanho",
+            "Cereja",
+            "Chocolate",
+            "Ciano",
+            "Cinza",
+            "Cinzento",
+            "Cobre",
+            "Coral",
+            "Creme",
+            "Damasco",
+            "Dourado",
+            "Escarlate",
+            "Esmeralda",
+            "Ferrugem",
+            "Fúcsia",
+            "Gelo",
+            "Grená",
+            "Gris",
+            "Índigo",
+            "Jade",
+            "Jambo",
+            "Laranja",
+            "Lavanda",
+            "Lilás",
+            "Limão",
+            "Loiro",
+            "Magenta",
+            "Malva",
+            "Marfim",
+            "Marrom",
+            "Mostarda",
+            "Negro",
+            "Ocre",
+            "Oliva",
+            "Ouro",
+            "Pêssego",
+            "Prata",
+            "Preto",
+            "Púrpura",
+            "Rosa",
+            "Roxo",
+            "Rubro",
+            "Salmão",
+            "Sépia",
+            "Terracota",
+            "Tijolo",
+            "Turquesa",
+            "Uva",
+            "Verde",
+            "Vermelho",
+            "Vinho",
+            "Violeta"});
             this.cboCor.Location = new System.Drawing.Point(378, 531);
             this.cboCor.Name = "cboCor";
             this.cboCor.Size = new System.Drawing.Size(181, 24);
@@ -281,6 +375,9 @@
             // cboStatus
             // 
             this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Items.AddRange(new object[] {
+            "Ativo",
+            "Inativo"});
             this.cboStatus.Location = new System.Drawing.Point(1228, 528);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(192, 24);
@@ -289,6 +386,17 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019"});
             this.comboBox4.Location = new System.Drawing.Point(378, 357);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(131, 24);
@@ -297,6 +405,17 @@
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019"});
             this.comboBox5.Location = new System.Drawing.Point(680, 360);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(144, 24);

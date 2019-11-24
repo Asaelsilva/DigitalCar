@@ -184,6 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1671, 776);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
             this.Controls.Add(this.btnPesquisar);
