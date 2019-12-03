@@ -36,14 +36,14 @@
             this.lblAnoFabricacao = new System.Windows.Forms.Label();
             this.lblCor = new System.Windows.Forms.Label();
             this.lblRenavan = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRenavam = new System.Windows.Forms.TextBox();
             this.lblQuilometragem = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKM = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnInserirVeiculo = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.cboModelo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,8 +52,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cboStatus = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboAnoModelo = new System.Windows.Forms.ComboBox();
+            this.cboAnoFabricacao = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtPlaca.Location = new System.Drawing.Point(1266, 213);
-            this.txtPlaca.MaxLength = 7;
+            this.txtPlaca.MaxLength = 8;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(154, 27);
             this.txtPlaca.TabIndex = 64;
@@ -135,14 +135,14 @@
             this.lblRenavan.TabIndex = 76;
             this.lblRenavan.Text = "Renavan";
             // 
-            // textBox1
+            // txtRenavam
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox1.Location = new System.Drawing.Point(1039, 354);
-            this.textBox1.MaxLength = 11;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 27);
-            this.textBox1.TabIndex = 75;
+            this.txtRenavam.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtRenavam.Location = new System.Drawing.Point(1039, 354);
+            this.txtRenavam.MaxLength = 11;
+            this.txtRenavam.Name = "txtRenavam";
+            this.txtRenavam.Size = new System.Drawing.Size(381, 27);
+            this.txtRenavam.TabIndex = 75;
             // 
             // lblQuilometragem
             // 
@@ -154,13 +154,13 @@
             this.lblQuilometragem.TabIndex = 78;
             this.lblQuilometragem.Text = "KM";
             // 
-            // textBox2
+            // txtKM
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(649, 528);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 27);
-            this.textBox2.TabIndex = 77;
+            this.txtKM.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtKM.Location = new System.Drawing.Point(649, 528);
+            this.txtKM.Name = "txtKM";
+            this.txtKM.Size = new System.Drawing.Size(154, 27);
+            this.txtKM.TabIndex = 77;
             // 
             // btnVoltar
             // 
@@ -190,51 +190,40 @@
             this.btnInserirVeiculo.UseVisualStyleBackColor = false;
             this.btnInserirVeiculo.Click += new System.EventHandler(this.btnInserirVeiculo_Click);
             // 
-            // comboBox1
+            // cboCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C"});
-            this.comboBox1.Location = new System.Drawing.Point(378, 213);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 24);
-            this.comboBox1.TabIndex = 83;
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Items.AddRange(new object[] {
+            "A"});
+            this.cboCategoria.Location = new System.Drawing.Point(378, 213);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(154, 24);
+            this.cboCategoria.TabIndex = 83;
             // 
-            // comboBox2
+            // cboMarca
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Items.AddRange(new object[] {
             "Chevrolet",
             "Hyundai ",
-            "Ford ",
-            "Renault",
-            "Volkswagen",
-            "Fiat"});
-            this.comboBox2.Location = new System.Drawing.Point(680, 213);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 24);
-            this.comboBox2.TabIndex = 84;
+            "Ford "});
+            this.cboMarca.Location = new System.Drawing.Point(680, 213);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(195, 24);
+            this.cboMarca.TabIndex = 84;
             // 
-            // comboBox3
+            // cboModelo
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cboModelo.FormattingEnabled = true;
+            this.cboModelo.Items.AddRange(new object[] {
             "Onix",
             "HB20",
             "Ka",
-            "Prisma",
-            "Kwid",
-            "Gol ",
-            "Argo",
-            "Mobi",
-            "Ka Sedan",
-            "Sandero"});
-            this.comboBox3.Location = new System.Drawing.Point(974, 216);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(196, 24);
-            this.comboBox3.TabIndex = 85;
+            "Prisma"});
+            this.cboModelo.Location = new System.Drawing.Point(974, 216);
+            this.cboModelo.Name = "cboModelo";
+            this.cboModelo.Size = new System.Drawing.Size(196, 24);
+            this.cboModelo.TabIndex = 85;
             // 
             // label1
             // 
@@ -383,10 +372,10 @@
             this.cboStatus.Size = new System.Drawing.Size(192, 24);
             this.cboStatus.TabIndex = 92;
             // 
-            // comboBox4
+            // cboAnoModelo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cboAnoModelo.FormattingEnabled = true;
+            this.cboAnoModelo.Items.AddRange(new object[] {
             "2010",
             "2011",
             "2012",
@@ -397,15 +386,15 @@
             "2017",
             "2018",
             "2019"});
-            this.comboBox4.Location = new System.Drawing.Point(378, 357);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(131, 24);
-            this.comboBox4.TabIndex = 94;
+            this.cboAnoModelo.Location = new System.Drawing.Point(378, 357);
+            this.cboAnoModelo.Name = "cboAnoModelo";
+            this.cboAnoModelo.Size = new System.Drawing.Size(131, 24);
+            this.cboAnoModelo.TabIndex = 94;
             // 
-            // comboBox5
+            // cboAnoFabricacao
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cboAnoFabricacao.FormattingEnabled = true;
+            this.cboAnoFabricacao.Items.AddRange(new object[] {
             "2010",
             "2011",
             "2012",
@@ -416,10 +405,10 @@
             "2017",
             "2018",
             "2019"});
-            this.comboBox5.Location = new System.Drawing.Point(680, 360);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(144, 24);
-            this.comboBox5.TabIndex = 95;
+            this.cboAnoFabricacao.Location = new System.Drawing.Point(680, 360);
+            this.cboAnoFabricacao.Name = "cboAnoFabricacao";
+            this.cboAnoFabricacao.Size = new System.Drawing.Size(144, 24);
+            this.cboAnoFabricacao.TabIndex = 95;
             // 
             // InserirVeiculo
             // 
@@ -427,8 +416,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1497, 794);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cboAnoFabricacao);
+            this.Controls.Add(this.cboAnoModelo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cboStatus);
             this.Controls.Add(this.label4);
@@ -437,15 +426,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboModelo);
+            this.Controls.Add(this.cboMarca);
+            this.Controls.Add(this.cboCategoria);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnInserirVeiculo);
             this.Controls.Add(this.lblQuilometragem);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtKM);
             this.Controls.Add(this.lblRenavan);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRenavam);
             this.Controls.Add(this.lblCor);
             this.Controls.Add(this.lblAnoFabricacao);
             this.Controls.Add(this.lblAnoModelo);
@@ -471,14 +460,14 @@
         private System.Windows.Forms.Label lblAnoFabricacao;
         private System.Windows.Forms.Label lblCor;
         private System.Windows.Forms.Label lblRenavan;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRenavam;
         private System.Windows.Forms.Label lblQuilometragem;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKM;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnInserirVeiculo;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cboCategoria;
+        private System.Windows.Forms.ComboBox cboMarca;
+        private System.Windows.Forms.ComboBox cboModelo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -487,7 +476,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboStatus;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cboAnoModelo;
+        private System.Windows.Forms.ComboBox cboAnoFabricacao;
     }
 }

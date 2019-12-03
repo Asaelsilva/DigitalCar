@@ -13,9 +13,9 @@ namespace bdDllEspecifica
                             int  status, string telefone, string celular, string cep, string uf, string cidade, string rua, int numero, string bairro)
         {
             DBBase bd = new DBBase();
-            string Query = "INSERT INTO Funcionario VALUES ('" + nome +  "' , '" + cpf + "', '" + rg + "', '" + datanascimento + "' , '" + email + "' , '" + turno + "' , " +
+            string strQuery = "INSERT INTO Funcionario VALUES ('" + nome +  "' , '" + cpf + "', '" + rg + "', '" + datanascimento + "' , '" + email + "' , '" + turno + "' , " +
                 " '" + funcao + "' , '" + status + "' , '" + telefone + "' , '" + celular + "' , '" + cep + "' , '" + uf + "' , '" + cidade + "' , '" + rua + "' , " + numero + " , '" + bairro + "')";
-            bd.ExecuteInstrucoesNaBase(Query);
+            bd.ExecuteInstrucoesNaBase(strQuery);
 
 
         }
@@ -26,6 +26,18 @@ namespace bdDllEspecifica
             string Query = "SELECT id_Funcionario,nome, cpf FROM Funcionario WHERE nome = '"+ nome + "'";
 
             banco.ExecuteInstrucoesNaBase(Query);
+        }
+
+        public void InserirVeiculos(string categoria, string marca, string modelo, string placa, int anoModelo, int anoFabricacao
+                                   , string propriedade, string status, string cor, string renavan,  int km)
+        {
+            DBBase bd = new DBBase();
+            var strQuery = "";
+            strQuery += "INSERT INTO Veiculo (categoria, marca, modelo,placa, ano_modelo, ano_fabricacao, propriedade, status, cor, renavam, km)";
+            strQuery += "VALUES ('" + categoria + "' , '" + marca + "', '" + modelo + "', '" + placa + "' , " + anoModelo + " , " + anoFabricacao + " , " +
+                " '" + propriedade + "' , '" + status + "' , '" + cor + "' , '" + renavan + "' , " + km + ")";
+            bd.ExecuteInstrucoesNaBase(strQuery);
+
         }
     }
 }
