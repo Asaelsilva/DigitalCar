@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigitalCar.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,11 @@ namespace DigitalCar.Viagem
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRegistrarViagem_Click(object sender, EventArgs e)
+        {
+            Viagens viagem = new Viagens();
         }
     }
 }

@@ -34,36 +34,36 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCepPartida = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboUfPartida = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCidadePartida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRg = new System.Windows.Forms.TextBox();
-            this.txtCpf = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtBairroPartida = new System.Windows.Forms.TextBox();
+            this.txtPartida = new System.Windows.Forms.TextBox();
+            this.txtRuaPartida = new System.Windows.Forms.TextBox();
             this.lbRg = new System.Windows.Forms.Label();
             this.lbCpf = new System.Windows.Forms.Label();
             this.lbNome = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCepDestino = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboUfDestino = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCidadeDestino = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBairroDestino = new System.Windows.Forms.TextBox();
+            this.txtNumDestino = new System.Windows.Forms.TextBox();
+            this.txtRuaDestino = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtEstacionamento = new System.Windows.Forms.TextBox();
+            this.txtKM = new System.Windows.Forms.TextBox();
+            this.txtCombustivel = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(1490, 629);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 94;
+            this.btnVoltar.TabIndex = 90;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -97,9 +97,10 @@
             this.btnRegistrarViagem.Location = new System.Drawing.Point(1673, 629);
             this.btnRegistrarViagem.Name = "btnRegistrarViagem";
             this.btnRegistrarViagem.Size = new System.Drawing.Size(114, 37);
-            this.btnRegistrarViagem.TabIndex = 93;
+            this.btnRegistrarViagem.TabIndex = 91;
             this.btnRegistrarViagem.Text = "Registrar";
             this.btnRegistrarViagem.UseVisualStyleBackColor = false;
+            this.btnRegistrarViagem.Click += new System.EventHandler(this.btnRegistrarViagem_Click);
             // 
             // lblRegistrarViagem
             // 
@@ -131,19 +132,19 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1477, 403);
-            this.tabControl1.TabIndex = 95;
+            this.tabControl1.TabIndex = 80;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.txtCepPartida);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.cboUfPartida);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtCidadePartida);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.txtRg);
-            this.tabPage1.Controls.Add(this.txtCpf);
-            this.tabPage1.Controls.Add(this.txtNome);
+            this.tabPage1.Controls.Add(this.txtBairroPartida);
+            this.tabPage1.Controls.Add(this.txtPartida);
+            this.tabPage1.Controls.Add(this.txtRuaPartida);
             this.tabPage1.Controls.Add(this.lbRg);
             this.tabPage1.Controls.Add(this.lbCpf);
             this.tabPage1.Controls.Add(this.lbNome);
@@ -156,14 +157,14 @@
             this.tabPage1.Text = "Endereço Partida";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtCepPartida
             // 
-            this.textBox2.AccessibleDescription = "";
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(932, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 27);
-            this.textBox2.TabIndex = 111;
+            this.txtCepPartida.AccessibleDescription = "";
+            this.txtCepPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtCepPartida.Location = new System.Drawing.Point(932, 243);
+            this.txtCepPartida.Name = "txtCepPartida";
+            this.txtCepPartida.Size = new System.Drawing.Size(308, 27);
+            this.txtCepPartida.TabIndex = 79;
             // 
             // label3
             // 
@@ -175,13 +176,13 @@
             this.label3.TabIndex = 112;
             this.label3.Text = "CEP:";
             // 
-            // comboBox1
+            // cboUfPartida
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(675, 244);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 32);
-            this.comboBox1.TabIndex = 110;
+            this.cboUfPartida.FormattingEnabled = true;
+            this.cboUfPartida.Location = new System.Drawing.Point(675, 244);
+            this.cboUfPartida.Name = "cboUfPartida";
+            this.cboUfPartida.Size = new System.Drawing.Size(121, 32);
+            this.cboUfPartida.TabIndex = 78;
             // 
             // label2
             // 
@@ -193,13 +194,13 @@
             this.label2.TabIndex = 109;
             this.label2.Text = "UF: ";
             // 
-            // textBox1
+            // txtCidadePartida
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(113, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(440, 27);
-            this.textBox1.TabIndex = 107;
+            this.txtCidadePartida.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidadePartida.Location = new System.Drawing.Point(113, 243);
+            this.txtCidadePartida.Name = "txtCidadePartida";
+            this.txtCidadePartida.Size = new System.Drawing.Size(440, 27);
+            this.txtCidadePartida.TabIndex = 77;
             // 
             // label1
             // 
@@ -211,30 +212,30 @@
             this.label1.TabIndex = 108;
             this.label1.Text = "Cidade: ";
             // 
-            // txtRg
+            // txtBairroPartida
             // 
-            this.txtRg.AccessibleDescription = "";
-            this.txtRg.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtRg.Location = new System.Drawing.Point(932, 119);
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(465, 27);
-            this.txtRg.TabIndex = 105;
+            this.txtBairroPartida.AccessibleDescription = "";
+            this.txtBairroPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtBairroPartida.Location = new System.Drawing.Point(932, 119);
+            this.txtBairroPartida.Name = "txtBairroPartida";
+            this.txtBairroPartida.Size = new System.Drawing.Size(465, 27);
+            this.txtBairroPartida.TabIndex = 76;
             // 
-            // txtCpf
+            // txtPartida
             // 
-            this.txtCpf.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtCpf.Location = new System.Drawing.Point(675, 119);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(98, 27);
-            this.txtCpf.TabIndex = 103;
+            this.txtPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtPartida.Location = new System.Drawing.Point(675, 119);
+            this.txtPartida.Name = "txtPartida";
+            this.txtPartida.Size = new System.Drawing.Size(98, 27);
+            this.txtPartida.TabIndex = 75;
             // 
-            // txtNome
+            // txtRuaPartida
             // 
-            this.txtNome.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(100, 119);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(453, 27);
-            this.txtNome.TabIndex = 101;
+            this.txtRuaPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRuaPartida.Location = new System.Drawing.Point(100, 119);
+            this.txtRuaPartida.Name = "txtRuaPartida";
+            this.txtRuaPartida.Size = new System.Drawing.Size(453, 27);
+            this.txtRuaPartida.TabIndex = 74;
             // 
             // lbRg
             // 
@@ -268,15 +269,15 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.txtCepDestino);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.cboUfDestino);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.txtCidadeDestino);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.txtBairroDestino);
+            this.tabPage2.Controls.Add(this.txtNumDestino);
+            this.tabPage2.Controls.Add(this.txtRuaDestino);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
@@ -289,14 +290,14 @@
             this.tabPage2.Text = "Endereço Destino";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtCepDestino
             // 
-            this.textBox3.AccessibleDescription = "";
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox3.Location = new System.Drawing.Point(947, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(308, 27);
-            this.textBox3.TabIndex = 123;
+            this.txtCepDestino.AccessibleDescription = "";
+            this.txtCepDestino.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtCepDestino.Location = new System.Drawing.Point(947, 233);
+            this.txtCepDestino.Name = "txtCepDestino";
+            this.txtCepDestino.Size = new System.Drawing.Size(308, 27);
+            this.txtCepDestino.TabIndex = 86;
             // 
             // label4
             // 
@@ -308,13 +309,13 @@
             this.label4.TabIndex = 124;
             this.label4.Text = "CEP:";
             // 
-            // comboBox2
+            // cboUfDestino
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(690, 234);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 32);
-            this.comboBox2.TabIndex = 122;
+            this.cboUfDestino.FormattingEnabled = true;
+            this.cboUfDestino.Location = new System.Drawing.Point(690, 234);
+            this.cboUfDestino.Name = "cboUfDestino";
+            this.cboUfDestino.Size = new System.Drawing.Size(121, 32);
+            this.cboUfDestino.TabIndex = 85;
             // 
             // label5
             // 
@@ -326,13 +327,13 @@
             this.label5.TabIndex = 121;
             this.label5.Text = "UF: ";
             // 
-            // textBox4
+            // txtCidadeDestino
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(128, 233);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(440, 27);
-            this.textBox4.TabIndex = 119;
+            this.txtCidadeDestino.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidadeDestino.Location = new System.Drawing.Point(128, 233);
+            this.txtCidadeDestino.Name = "txtCidadeDestino";
+            this.txtCidadeDestino.Size = new System.Drawing.Size(440, 27);
+            this.txtCidadeDestino.TabIndex = 84;
             // 
             // label6
             // 
@@ -344,30 +345,30 @@
             this.label6.TabIndex = 120;
             this.label6.Text = "Cidade: ";
             // 
-            // textBox5
+            // txtBairroDestino
             // 
-            this.textBox5.AccessibleDescription = "";
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox5.Location = new System.Drawing.Point(947, 109);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(465, 27);
-            this.textBox5.TabIndex = 117;
+            this.txtBairroDestino.AccessibleDescription = "";
+            this.txtBairroDestino.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtBairroDestino.Location = new System.Drawing.Point(947, 109);
+            this.txtBairroDestino.Name = "txtBairroDestino";
+            this.txtBairroDestino.Size = new System.Drawing.Size(465, 27);
+            this.txtBairroDestino.TabIndex = 83;
             // 
-            // textBox6
+            // txtNumDestino
             // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox6.Location = new System.Drawing.Point(690, 109);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(98, 27);
-            this.textBox6.TabIndex = 115;
+            this.txtNumDestino.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtNumDestino.Location = new System.Drawing.Point(690, 109);
+            this.txtNumDestino.Name = "txtNumDestino";
+            this.txtNumDestino.Size = new System.Drawing.Size(98, 27);
+            this.txtNumDestino.TabIndex = 82;
             // 
-            // textBox7
+            // txtRuaDestino
             // 
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(115, 109);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(453, 27);
-            this.textBox7.TabIndex = 113;
+            this.txtRuaDestino.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRuaDestino.Location = new System.Drawing.Point(115, 109);
+            this.txtRuaDestino.Name = "txtRuaDestino";
+            this.txtRuaDestino.Size = new System.Drawing.Size(453, 27);
+            this.txtRuaDestino.TabIndex = 81;
             // 
             // label7
             // 
@@ -402,9 +403,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.textBox11);
-            this.tabPage3.Controls.Add(this.textBox10);
-            this.tabPage3.Controls.Add(this.textBox12);
+            this.tabPage3.Controls.Add(this.txtEstacionamento);
+            this.tabPage3.Controls.Add(this.txtKM);
+            this.tabPage3.Controls.Add(this.txtCombustivel);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.label15);
@@ -426,32 +427,32 @@
             this.label10.TabIndex = 138;
             this.label10.Text = "Gastos";
             // 
-            // textBox11
+            // txtEstacionamento
             // 
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(588, 289);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(178, 27);
-            this.textBox11.TabIndex = 137;
-            this.textBox11.Text = "R$";
+            this.txtEstacionamento.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstacionamento.Location = new System.Drawing.Point(588, 289);
+            this.txtEstacionamento.Name = "txtEstacionamento";
+            this.txtEstacionamento.Size = new System.Drawing.Size(178, 27);
+            this.txtEstacionamento.TabIndex = 89;
+            this.txtEstacionamento.Text = "R$";
             // 
-            // textBox10
+            // txtKM
             // 
-            this.textBox10.AccessibleDescription = "";
-            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.textBox10.Location = new System.Drawing.Point(190, 59);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(243, 27);
-            this.textBox10.TabIndex = 129;
+            this.txtKM.AccessibleDescription = "";
+            this.txtKM.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtKM.Location = new System.Drawing.Point(190, 59);
+            this.txtKM.Name = "txtKM";
+            this.txtKM.Size = new System.Drawing.Size(243, 27);
+            this.txtKM.TabIndex = 87;
             // 
-            // textBox12
+            // txtCombustivel
             // 
-            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(168, 289);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(178, 27);
-            this.textBox12.TabIndex = 125;
-            this.textBox12.Text = "R$";
+            this.txtCombustivel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCombustivel.Location = new System.Drawing.Point(168, 289);
+            this.txtCombustivel.Name = "txtCombustivel";
+            this.txtCombustivel.Size = new System.Drawing.Size(178, 27);
+            this.txtCombustivel.TabIndex = 88;
+            this.txtCombustivel.Text = "R$";
             // 
             // label13
             // 
@@ -519,38 +520,38 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCepPartida;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboUfPartida;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCidadePartida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtRg;
-        private System.Windows.Forms.TextBox txtCpf;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtBairroPartida;
+        private System.Windows.Forms.TextBox txtPartida;
+        private System.Windows.Forms.TextBox txtRuaPartida;
         private System.Windows.Forms.Label lbRg;
         private System.Windows.Forms.Label lbCpf;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCepDestino;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboUfDestino;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCidadeDestino;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBairroDestino;
+        private System.Windows.Forms.TextBox txtNumDestino;
+        private System.Windows.Forms.TextBox txtRuaDestino;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtKM;
+        private System.Windows.Forms.TextBox txtCombustivel;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtEstacionamento;
     }
 }

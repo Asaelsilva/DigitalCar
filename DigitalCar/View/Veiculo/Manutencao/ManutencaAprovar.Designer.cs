@@ -52,7 +52,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(911, 700);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 90;
+            this.btnVoltar.TabIndex = 56;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -66,7 +66,7 @@
             this.btnAprovarManutencao.Location = new System.Drawing.Point(1085, 700);
             this.btnAprovarManutencao.Name = "btnAprovarManutencao";
             this.btnAprovarManutencao.Size = new System.Drawing.Size(114, 37);
-            this.btnAprovarManutencao.TabIndex = 89;
+            this.btnAprovarManutencao.TabIndex = 55;
             this.btnAprovarManutencao.Text = "Salvar";
             this.btnAprovarManutencao.UseVisualStyleBackColor = false;
             // 
@@ -117,10 +117,13 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Preventiva",
+            "Corretiva"});
             this.comboBox1.Location = new System.Drawing.Point(184, 296);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(169, 24);
-            this.comboBox1.TabIndex = 66;
+            this.comboBox1.TabIndex = 54;
             // 
             // dgResultado
             // 
@@ -147,8 +150,8 @@
             this.txtBuscar.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtBuscar.Location = new System.Drawing.Point(345, 206);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(519, 27);
-            this.txtBuscar.TabIndex = 91;
+            this.txtBuscar.Size = new System.Drawing.Size(566, 27);
+            this.txtBuscar.TabIndex = 53;
             // 
             // ManutencaAprovar
             // 

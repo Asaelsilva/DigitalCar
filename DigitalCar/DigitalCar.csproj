@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Entities\VeiculoInserir.cs" />
+    <Compile Include="Model\Entities\Viagens.cs" />
     <Compile Include="Model\Enums\EnumsEnti.cs" />
     <Compile Include="View\Aviso\ConsultarAviso.cs">
       <SubType>Form</SubType>

@@ -95,7 +95,7 @@
             this.txtPlaca.MaxLength = 8;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(154, 27);
-            this.txtPlaca.TabIndex = 64;
+            this.txtPlaca.TabIndex = 37;
             // 
             // lblAnoModelo
             // 
@@ -144,7 +144,7 @@
             this.txtRenavam.MaxLength = 11;
             this.txtRenavam.Name = "txtRenavam";
             this.txtRenavam.Size = new System.Drawing.Size(381, 27);
-            this.txtRenavam.TabIndex = 75;
+            this.txtRenavam.TabIndex = 40;
             // 
             // lblQuilometragem
             // 
@@ -162,7 +162,7 @@
             this.txtKM.Location = new System.Drawing.Point(649, 528);
             this.txtKM.Name = "txtKM";
             this.txtKM.Size = new System.Drawing.Size(154, 27);
-            this.txtKM.TabIndex = 77;
+            this.txtKM.TabIndex = 42;
             // 
             // btnVoltar
             // 
@@ -173,7 +173,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(1123, 693);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 82;
+            this.btnVoltar.TabIndex = 45;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -187,7 +187,7 @@
             this.btnInserirVeiculo.Location = new System.Drawing.Point(1306, 693);
             this.btnInserirVeiculo.Name = "btnInserirVeiculo";
             this.btnInserirVeiculo.Size = new System.Drawing.Size(114, 37);
-            this.btnInserirVeiculo.TabIndex = 81;
+            this.btnInserirVeiculo.TabIndex = 46;
             this.btnInserirVeiculo.Text = "Inserir";
             this.btnInserirVeiculo.UseVisualStyleBackColor = false;
             this.btnInserirVeiculo.Click += new System.EventHandler(this.btnInserirVeiculo_Click);
@@ -200,7 +200,7 @@
             this.cboCategoria.Location = new System.Drawing.Point(378, 213);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(154, 24);
-            this.cboCategoria.TabIndex = 83;
+            this.cboCategoria.TabIndex = 34;
             // 
             // cboMarca
             // 
@@ -212,7 +212,7 @@
             this.cboMarca.Location = new System.Drawing.Point(680, 213);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(195, 24);
-            this.cboMarca.TabIndex = 84;
+            this.cboMarca.TabIndex = 35;
             // 
             // cboModelo
             // 
@@ -225,7 +225,7 @@
             this.cboModelo.Location = new System.Drawing.Point(974, 216);
             this.cboModelo.Name = "cboModelo";
             this.cboModelo.Size = new System.Drawing.Size(196, 24);
-            this.cboModelo.TabIndex = 85;
+            this.cboModelo.TabIndex = 36;
             // 
             // label1
             // 
@@ -333,7 +333,7 @@
             this.cboCor.Location = new System.Drawing.Point(378, 531);
             this.cboCor.Name = "cboCor";
             this.cboCor.Size = new System.Drawing.Size(181, 24);
-            this.cboCor.TabIndex = 89;
+            this.cboCor.TabIndex = 41;
             // 
             // cboPropriedade
             // 
@@ -341,7 +341,7 @@
             this.cboPropriedade.Location = new System.Drawing.Point(898, 528);
             this.cboPropriedade.Name = "cboPropriedade";
             this.cboPropriedade.Size = new System.Drawing.Size(215, 24);
-            this.cboPropriedade.TabIndex = 90;
+            this.cboPropriedade.TabIndex = 43;
             // 
             // label4
             // 
@@ -372,7 +372,7 @@
             this.cboStatus.Location = new System.Drawing.Point(1228, 528);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(192, 24);
-            this.cboStatus.TabIndex = 92;
+            this.cboStatus.TabIndex = 44;
             // 
             // cboAnoModelo
             // 
@@ -391,7 +391,7 @@
             this.cboAnoModelo.Location = new System.Drawing.Point(378, 357);
             this.cboAnoModelo.Name = "cboAnoModelo";
             this.cboAnoModelo.Size = new System.Drawing.Size(131, 24);
-            this.cboAnoModelo.TabIndex = 94;
+            this.cboAnoModelo.TabIndex = 38;
             // 
             // cboAnoFabricacao
             // 
@@ -410,7 +410,7 @@
             this.cboAnoFabricacao.Location = new System.Drawing.Point(680, 360);
             this.cboAnoFabricacao.Name = "cboAnoFabricacao";
             this.cboAnoFabricacao.Size = new System.Drawing.Size(144, 24);
-            this.cboAnoFabricacao.TabIndex = 95;
+            this.cboAnoFabricacao.TabIndex = 39;
             // 
             // InserirVeiculo
             // 

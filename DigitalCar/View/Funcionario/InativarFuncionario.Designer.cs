@@ -57,7 +57,7 @@
             this.dgResultado.RowHeadersWidth = 51;
             this.dgResultado.RowTemplate.Height = 24;
             this.dgResultado.Size = new System.Drawing.Size(677, 164);
-            this.dgResultado.TabIndex = 65;
+            this.dgResultado.TabIndex = 33;
             this.dgResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgResultado_CellContentClick);
             // 
             // btnPesquisar
@@ -69,7 +69,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(1132, 193);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(156, 37);
-            this.btnPesquisar.TabIndex = 64;
+            this.btnPesquisar.TabIndex = 28;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -100,7 +100,7 @@
             this.txtBuscar.Location = new System.Drawing.Point(708, 200);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(355, 27);
-            this.txtBuscar.TabIndex = 60;
+            this.txtBuscar.TabIndex = 27;
             // 
             // pictureBox1
             // 
@@ -122,7 +122,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(999, 685);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 72;
+            this.btnVoltar.TabIndex = 31;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -136,7 +136,7 @@
             this.btnAISalvarFunc.Location = new System.Drawing.Point(1174, 685);
             this.btnAISalvarFunc.Name = "btnAISalvarFunc";
             this.btnAISalvarFunc.Size = new System.Drawing.Size(114, 37);
-            this.btnAISalvarFunc.TabIndex = 71;
+            this.btnAISalvarFunc.TabIndex = 32;
             this.btnAISalvarFunc.Text = "Salvar";
             this.btnAISalvarFunc.UseVisualStyleBackColor = false;
             this.btnAISalvarFunc.Click += new System.EventHandler(this.btnAISalvarFunc_Click);
@@ -171,7 +171,7 @@
             this.cboFiltro.Location = new System.Drawing.Point(480, 200);
             this.cboFiltro.Name = "cboFiltro";
             this.cboFiltro.Size = new System.Drawing.Size(187, 24);
-            this.cboFiltro.TabIndex = 74;
+            this.cboFiltro.TabIndex = 26;
             // 
             // label1
             // 
@@ -192,7 +192,7 @@
             this.cboStatus.Location = new System.Drawing.Point(658, 691);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(187, 24);
-            this.cboStatus.TabIndex = 76;
+            this.cboStatus.TabIndex = 30;
             // 
             // txtCodigo
             // 
@@ -200,7 +200,7 @@
             this.txtCodigo.Location = new System.Drawing.Point(418, 691);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(105, 27);
-            this.txtCodigo.TabIndex = 78;
+            this.txtCodigo.TabIndex = 29;
             // 
             // label4
             // 

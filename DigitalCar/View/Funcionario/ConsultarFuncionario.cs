@@ -97,7 +97,13 @@ namespace DigitalCar
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-
+            string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=DigitalCar";
+            SqlConnection con = new SqlConnection(strConxao);
+            string Query = "SELECT * FROM Funcionario";
+            SqlDataAdapter da = new SqlDataAdapter(Query, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgListaFuncionario.DataSource = dt;
         }
         private void btnVoltar_Click(object sender, EventArgs e)
         {

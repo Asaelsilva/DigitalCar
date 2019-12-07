@@ -75,7 +75,7 @@
             this.dtDataSolicitada.Location = new System.Drawing.Point(388, 216);
             this.dtDataSolicitada.Name = "dtDataSolicitada";
             this.dtDataSolicitada.Size = new System.Drawing.Size(276, 27);
-            this.dtDataSolicitada.TabIndex = 71;
+            this.dtDataSolicitada.TabIndex = 65;
             // 
             // lblDataAgendada
             // 
@@ -93,7 +93,7 @@
             this.dtDataAgendada.Location = new System.Drawing.Point(716, 216);
             this.dtDataAgendada.Name = "dtDataAgendada";
             this.dtDataAgendada.Size = new System.Drawing.Size(276, 27);
-            this.dtDataAgendada.TabIndex = 73;
+            this.dtDataAgendada.TabIndex = 66;
             // 
             // lblDataConcluida
             // 
@@ -111,7 +111,7 @@
             this.dtDataConcluida.Location = new System.Drawing.Point(1046, 216);
             this.dtDataConcluida.Name = "dtDataConcluida";
             this.dtDataConcluida.Size = new System.Drawing.Size(276, 27);
-            this.dtDataConcluida.TabIndex = 75;
+            this.dtDataConcluida.TabIndex = 67;
             // 
             // pictureBox1
             // 
@@ -133,7 +133,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(1025, 663);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
-            this.btnVoltar.TabIndex = 84;
+            this.btnVoltar.TabIndex = 72;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -147,7 +147,7 @@
             this.btnSolicitarManutencao.Location = new System.Drawing.Point(1208, 663);
             this.btnSolicitarManutencao.Name = "btnSolicitarManutencao";
             this.btnSolicitarManutencao.Size = new System.Drawing.Size(114, 37);
-            this.btnSolicitarManutencao.TabIndex = 83;
+            this.btnSolicitarManutencao.TabIndex = 73;
             this.btnSolicitarManutencao.Text = "Solicitar";
             this.btnSolicitarManutencao.UseVisualStyleBackColor = false;
             // 
@@ -196,7 +196,7 @@
             this.txtVeiculo.Location = new System.Drawing.Point(388, 379);
             this.txtVeiculo.Name = "txtVeiculo";
             this.txtVeiculo.Size = new System.Drawing.Size(276, 22);
-            this.txtVeiculo.TabIndex = 90;
+            this.txtVeiculo.TabIndex = 68;
             // 
             // cboMecanica
             // 
@@ -204,7 +204,7 @@
             this.cboMecanica.Location = new System.Drawing.Point(385, 509);
             this.cboMecanica.Name = "cboMecanica";
             this.cboMecanica.Size = new System.Drawing.Size(276, 24);
-            this.cboMecanica.TabIndex = 92;
+            this.cboMecanica.TabIndex = 71;
             // 
             // cboCategoria
             // 
@@ -212,7 +212,7 @@
             this.cboCategoria.Location = new System.Drawing.Point(716, 379);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(276, 24);
-            this.cboCategoria.TabIndex = 93;
+            this.cboCategoria.TabIndex = 69;
             // 
             // cboTipoDaManutencao
             // 
@@ -220,7 +220,7 @@
             this.cboTipoDaManutencao.Location = new System.Drawing.Point(1046, 377);
             this.cboTipoDaManutencao.Name = "cboTipoDaManutencao";
             this.cboTipoDaManutencao.Size = new System.Drawing.Size(276, 24);
-            this.cboTipoDaManutencao.TabIndex = 94;
+            this.cboTipoDaManutencao.TabIndex = 70;
             // 
             // ManutencaoSolicitar
             // 

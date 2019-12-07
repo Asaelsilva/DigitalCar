@@ -92,7 +92,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1032, 841);
+            this.btnVoltar.Location = new System.Drawing.Point(1197, 732);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(156, 37);
             this.btnVoltar.TabIndex = 24;
@@ -110,7 +110,7 @@
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(156, 37);
             this.btnAlterar.TabIndex = 23;
-            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Text = "Funcionarios";
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
@@ -118,9 +118,9 @@
             // 
             this.groupBoxListaFuncionarios.Controls.Add(this.dgListaFuncionario);
             this.groupBoxListaFuncionarios.Controls.Add(this.btnAlterar);
-            this.groupBoxListaFuncionarios.Location = new System.Drawing.Point(38, 433);
+            this.groupBoxListaFuncionarios.Location = new System.Drawing.Point(38, 379);
             this.groupBoxListaFuncionarios.Name = "groupBoxListaFuncionarios";
-            this.groupBoxListaFuncionarios.Size = new System.Drawing.Size(1355, 311);
+            this.groupBoxListaFuncionarios.Size = new System.Drawing.Size(1355, 327);
             this.groupBoxListaFuncionarios.TabIndex = 61;
             this.groupBoxListaFuncionarios.TabStop = false;
             this.groupBoxListaFuncionarios.Text = "Lista de Funcionarios";
@@ -133,8 +133,8 @@
             this.dgListaFuncionario.Name = "dgListaFuncionario";
             this.dgListaFuncionario.RowHeadersWidth = 51;
             this.dgListaFuncionario.RowTemplate.Height = 24;
-            this.dgListaFuncionario.Size = new System.Drawing.Size(1301, 170);
-            this.dgListaFuncionario.TabIndex = 59;
+            this.dgListaFuncionario.Size = new System.Drawing.Size(1301, 186);
+            this.dgListaFuncionario.TabIndex = 25;
             this.dgListaFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaFuncionario_CellContentClick);
             // 
             // cboFiltro
@@ -165,7 +165,7 @@
             this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
             this.pictureBox1.Location = new System.Drawing.Point(38, 45);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.Size = new System.Drawing.Size(243, 293);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
@@ -175,11 +175,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1487, 1002);
+            this.ClientSize = new System.Drawing.Size(1487, 895);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboFiltro);
-            this.Controls.Add(this.groupBoxListaFuncionarios);
             this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.groupBoxListaFuncionarios);
             this.Controls.Add(this.btnConsultarFuncionario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);

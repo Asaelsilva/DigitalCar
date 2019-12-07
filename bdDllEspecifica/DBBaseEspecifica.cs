@@ -47,5 +47,22 @@ namespace bdDllEspecifica
             strQuery += "UPDATE Funcionario SET status = '" + status + "'  WHERE codigoId = " + codigo;
             bd.ExecuteInstrucoesNaBase(strQuery);
         } 
+
+        public void RegistrarViagem(string ruapartida, int numpartida, string bairropartida, string cidadepartida, string ufpartida, string cepPartida
+                                  , string ruadestino, int numdestino, string bairrodestino, string cidadedestino, string ufdestino, string cepdestino
+                                  , int km, int combustivel, int estacionamento)
+        {
+            DBBase bd = new DBBase();
+            var strQuery = "";
+            strQuery += "INSERT INTO Viagem (rua_Partida, numero_Partida, bairro_Partida, cidade_Partida, uf_Partida, cep_Partida," +
+                                           " rua_Destino, numero_Destino, bairro_destino, cidade_Destino, uf_Destino, cep_Destino," +
+                                            "km, combustivel, estacionamento)";
+            strQuery += "VALUES ('" + ruapartida + "' , " + numpartida + " , '" + bairropartida + "' , '" + cidadepartida + "' , '" + ufpartida + "' , '" + cepPartida + "' , " +
+                                "'" + ruadestino + "' , " + numdestino + " , '" + bairrodestino + "' , '" + cidadedestino + "' , '" + ufdestino + "' , '" + cepdestino + "' , " +
+                                "" + km + " , " + combustivel + " , " + estacionamento + ")";
+            bd.ExecuteInstrucoesNaBase(strQuery);
+
+
+        }
     }
 }
