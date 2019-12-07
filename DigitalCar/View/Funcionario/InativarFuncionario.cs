@@ -1,4 +1,5 @@
-﻿using DigitalCar.Entities;
+﻿using bdDllEspecifica;
+using DigitalCar.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,19 +52,19 @@ namespace DigitalCar
             if (cboFiltro.Text == "Codigo" && txtBuscar.Text.Length < 2)
             {
                 funcionario.Id = Convert.ToInt32(txtBuscar.Text);
-                Query = "SELECT codigo_Funcionario, nome , status FROM Funcionario WHERE codigoId = '" + funcionario.Id + "'";
+                Query = "SELECT codigoId, nome , status FROM Funcionario WHERE codigoId = '" + funcionario.Id + "'";
                 falso = true;
             }
             else if (cboFiltro.Text == "CPF" && txtBuscar.Text.Length == 11)
             {
                 funcionario.Cpf = txtBuscar.Text;
-                Query = "SELECT codigo_Funcionario, nome , status FROM Funcionario WHERE cpf = '" + funcionario.Cpf + "'";
+                Query = "SELECT codigoId, nome , status FROM Funcionario WHERE cpf = '" + funcionario.Cpf + "'";
                 falso = true;
             }
             else if (cboFiltro.Text == "Nome")
             {
                 funcionario.Nome = txtBuscar.Text;
-                Query = "SELECT codigo_Funcionario, nome, status FROM Funcionario WHERE nome = '" + funcionario.Nome + "'";
+                Query = "SELECT codigoId, nome, status FROM Funcionario WHERE nome = '" + funcionario.Nome + "'";
                 falso = true;
             }
             else
@@ -109,23 +110,29 @@ namespace DigitalCar
 
         private void rbnAtivo_CheckedChanged(object sender, EventArgs e)
         {
-            Funcionario funcionario = new Funcionario();
-            funcionario.Id = Convert.ToInt32(txtBuscar.Text);
-
-            string Query = "SELECT status FROM Funcionatio WHERE codigo_Funcionario = '" + funcionario.Id + "'";
-
-            if (Query == "1")
-            {
-                rbnAtivo.Checked = true;
-            }
+            
         }
 
         private void rbnInativo_CheckedChanged(object sender, EventArgs e)
         {
-            //if (status == 2)
-            //{
-            //    rbnAtivo.Checked = false;
-            //}
+            
+        }
+
+        private void btnAISalvarFunc_Click(object sender, EventArgs e)
+        {
+
+            Funcionario alteraStatus = new Funcionario();
+
+            alteraStatus.Id = Convert.ToInt32(txtCodigo.Text);
+            alteraStatus.Status = cboStatus.Text;
+
+
+            DBBaseEspecifica db = new DBBaseEspecifica();
+
+            db.AlteraStatusFuncioanrio(alteraStatus.Id, alteraStatus.Status);
+
+            MessageBox.Show("Status do Funcionario foi mudado para " + alteraStatus.Status);
+            this.Close();
         }
     }
 }

@@ -49,29 +49,31 @@
             // btnVoltar
             // 
             this.btnVoltar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1090, 693);
+            this.btnVoltar.Location = new System.Drawing.Point(1020, 699);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 102;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.UseWaitCursor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnAnularViagem
             // 
             this.btnAnularViagem.BackColor = System.Drawing.Color.Navy;
-            this.btnAnularViagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnularViagem.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnAnularViagem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnularViagem.ForeColor = System.Drawing.Color.White;
-            this.btnAnularViagem.Location = new System.Drawing.Point(1273, 693);
+            this.btnAnularViagem.Location = new System.Drawing.Point(1203, 699);
             this.btnAnularViagem.Name = "btnAnularViagem";
             this.btnAnularViagem.Size = new System.Drawing.Size(114, 37);
             this.btnAnularViagem.TabIndex = 101;
             this.btnAnularViagem.Text = "Anular";
             this.btnAnularViagem.UseVisualStyleBackColor = false;
+            this.btnAnularViagem.UseWaitCursor = true;
             // 
             // lblAnularViagem
             // 
@@ -82,15 +84,19 @@
             this.lblAnularViagem.Size = new System.Drawing.Size(188, 32);
             this.lblAnularViagem.TabIndex = 100;
             this.lblAnularViagem.Text = "Anular Viagem";
+            this.lblAnularViagem.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
             this.pictureBox1.Location = new System.Drawing.Point(47, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 99;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // groupBoxResultadoPesquisa
             // 
@@ -102,6 +108,7 @@
             this.groupBoxResultadoPesquisa.TabIndex = 108;
             this.groupBoxResultadoPesquisa.TabStop = false;
             this.groupBoxResultadoPesquisa.Text = "Resultado da Pesquisa";
+            this.groupBoxResultadoPesquisa.UseWaitCursor = true;
             // 
             // dgResultado
             // 
@@ -112,6 +119,7 @@
             this.dgResultado.RowTemplate.Height = 24;
             this.dgResultado.Size = new System.Drawing.Size(677, 155);
             this.dgResultado.TabIndex = 65;
+            this.dgResultado.UseWaitCursor = true;
             // 
             // groupBoxStatusFunc
             // 
@@ -124,6 +132,7 @@
             this.groupBoxStatusFunc.TabIndex = 70;
             this.groupBoxStatusFunc.TabStop = false;
             this.groupBoxStatusFunc.Text = "Status ";
+            this.groupBoxStatusFunc.UseWaitCursor = true;
             // 
             // rbnAtivo
             // 
@@ -136,6 +145,7 @@
             this.rbnAtivo.TabStop = true;
             this.rbnAtivo.Text = "Ativo";
             this.rbnAtivo.UseVisualStyleBackColor = true;
+            this.rbnAtivo.UseWaitCursor = true;
             // 
             // rbnInativo
             // 
@@ -148,11 +158,12 @@
             this.rbnInativo.TabStop = true;
             this.rbnInativo.Text = "Inativar";
             this.rbnInativo.UseVisualStyleBackColor = true;
+            this.rbnInativo.UseWaitCursor = true;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnPesquisar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.ForeColor = System.Drawing.Color.White;
             this.btnPesquisar.Location = new System.Drawing.Point(1161, 146);
@@ -161,6 +172,7 @@
             this.btnPesquisar.TabIndex = 105;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -171,6 +183,7 @@
             this.label2.Size = new System.Drawing.Size(374, 21);
             this.label2.TabIndex = 104;
             this.label2.Text = "Insira o Código do Funcionário, Nome ou CPF";
+            this.label2.UseWaitCursor = true;
             // 
             // txtBuscar
             // 
@@ -179,13 +192,14 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(627, 27);
             this.txtBuscar.TabIndex = 103;
+            this.txtBuscar.UseWaitCursor = true;
             // 
             // AnularViagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1671, 776);
+            this.ClientSize = new System.Drawing.Size(1420, 776);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.label2);
@@ -195,8 +209,8 @@
             this.Controls.Add(this.lblAnularViagem);
             this.Controls.Add(this.pictureBox1);
             this.Name = "AnularViagem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnularViagem";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AnularViagem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxResultadoPesquisa.ResumeLayout(false);

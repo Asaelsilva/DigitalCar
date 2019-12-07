@@ -33,15 +33,15 @@
             this.txtConsultarFuncionario = new System.Windows.Forms.TextBox();
             this.btnConsultarFuncionario = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.groupBoxListaFuncionarios = new System.Windows.Forms.GroupBox();
             this.dgListaFuncionario = new System.Windows.Forms.DataGridView();
             this.cboFiltro = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxListaFuncionarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -99,15 +99,6 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 326);
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
             // 
             // btnAlterar
             // 
@@ -168,12 +159,23 @@
             this.label3.TabIndex = 64;
             this.label3.Text = "Pesquisa por: ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
             // ConsultarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1414, 904);
+            this.ClientSize = new System.Drawing.Size(1487, 1002);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboFiltro);
             this.Controls.Add(this.groupBoxListaFuncionarios);
@@ -184,10 +186,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtConsultarFuncionario);
             this.Name = "ConsultarFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultarFuncionario";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxListaFuncionarios.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgListaFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

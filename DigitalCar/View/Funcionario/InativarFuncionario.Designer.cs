@@ -34,17 +34,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rbnAtivo = new System.Windows.Forms.RadioButton();
-            this.rbnInativo = new System.Windows.Forms.RadioButton();
-            this.groupBoxStatusFunc = new System.Windows.Forms.GroupBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAISalvarFunc = new System.Windows.Forms.Button();
             this.groupBoxResultadoPesquisa = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboFiltro = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgResultado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxStatusFunc.SuspendLayout();
             this.groupBoxResultadoPesquisa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.dgResultado.Name = "dgResultado";
             this.dgResultado.RowHeadersWidth = 51;
             this.dgResultado.RowTemplate.Height = 24;
-            this.dgResultado.Size = new System.Drawing.Size(677, 98);
+            this.dgResultado.Size = new System.Drawing.Size(677, 164);
             this.dgResultado.TabIndex = 65;
             this.dgResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgResultado_CellContentClick);
             // 
@@ -105,48 +105,13 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
             this.pictureBox1.Location = new System.Drawing.Point(29, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
-            // 
-            // rbnAtivo
-            // 
-            this.rbnAtivo.AutoSize = true;
-            this.rbnAtivo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAtivo.Location = new System.Drawing.Point(18, 38);
-            this.rbnAtivo.Name = "rbnAtivo";
-            this.rbnAtivo.Size = new System.Drawing.Size(67, 25);
-            this.rbnAtivo.TabIndex = 67;
-            this.rbnAtivo.Text = "Ativo";
-            this.rbnAtivo.UseVisualStyleBackColor = true;
-            this.rbnAtivo.CheckedChanged += new System.EventHandler(this.rbnAtivo_CheckedChanged);
-            // 
-            // rbnInativo
-            // 
-            this.rbnInativo.AutoSize = true;
-            this.rbnInativo.Font = new System.Drawing.Font("Calibri", 10.2F);
-            this.rbnInativo.Location = new System.Drawing.Point(193, 38);
-            this.rbnInativo.Name = "rbnInativo";
-            this.rbnInativo.Size = new System.Drawing.Size(83, 25);
-            this.rbnInativo.TabIndex = 68;
-            this.rbnInativo.Text = "Inativar";
-            this.rbnInativo.UseVisualStyleBackColor = true;
-            this.rbnInativo.CheckedChanged += new System.EventHandler(this.rbnInativo_CheckedChanged);
-            // 
-            // groupBoxStatusFunc
-            // 
-            this.groupBoxStatusFunc.Controls.Add(this.rbnAtivo);
-            this.groupBoxStatusFunc.Controls.Add(this.rbnInativo);
-            this.groupBoxStatusFunc.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxStatusFunc.Location = new System.Drawing.Point(22, 192);
-            this.groupBoxStatusFunc.Name = "groupBoxStatusFunc";
-            this.groupBoxStatusFunc.Size = new System.Drawing.Size(387, 100);
-            this.groupBoxStatusFunc.TabIndex = 70;
-            this.groupBoxStatusFunc.TabStop = false;
-            this.groupBoxStatusFunc.Text = "Status";
-            this.groupBoxStatusFunc.Enter += new System.EventHandler(this.groupBoxStatusFunc_Enter);
             // 
             // btnVoltar
             // 
@@ -154,7 +119,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(949, 685);
+            this.btnVoltar.Location = new System.Drawing.Point(999, 685);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 72;
@@ -174,14 +139,14 @@
             this.btnAISalvarFunc.TabIndex = 71;
             this.btnAISalvarFunc.Text = "Salvar";
             this.btnAISalvarFunc.UseVisualStyleBackColor = false;
+            this.btnAISalvarFunc.Click += new System.EventHandler(this.btnAISalvarFunc_Click);
             // 
             // groupBoxResultadoPesquisa
             // 
             this.groupBoxResultadoPesquisa.Controls.Add(this.dgResultado);
-            this.groupBoxResultadoPesquisa.Controls.Add(this.groupBoxStatusFunc);
             this.groupBoxResultadoPesquisa.Location = new System.Drawing.Point(329, 295);
             this.groupBoxResultadoPesquisa.Name = "groupBoxResultadoPesquisa";
-            this.groupBoxResultadoPesquisa.Size = new System.Drawing.Size(734, 328);
+            this.groupBoxResultadoPesquisa.Size = new System.Drawing.Size(734, 286);
             this.groupBoxResultadoPesquisa.TabIndex = 73;
             this.groupBoxResultadoPesquisa.TabStop = false;
             this.groupBoxResultadoPesquisa.Text = "Resultado da Pesquisa";
@@ -208,12 +173,55 @@
             this.cboFiltro.Size = new System.Drawing.Size(187, 24);
             this.cboFiltro.TabIndex = 74;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label1.Location = new System.Drawing.Point(335, 697);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 21);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Codigo: ";
+            // 
+            // cboStatus
+            // 
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Items.AddRange(new object[] {
+            "Ativo",
+            "Inativo"});
+            this.cboStatus.Location = new System.Drawing.Point(658, 691);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(187, 24);
+            this.cboStatus.TabIndex = 76;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtCodigo.Location = new System.Drawing.Point(418, 691);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(105, 27);
+            this.txtCodigo.TabIndex = 78;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
+            this.label4.Location = new System.Drawing.Point(589, 697);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 21);
+            this.label4.TabIndex = 79;
+            this.label4.Text = "Status:";
+            // 
             // InativarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1420, 758);
+            this.ClientSize = new System.Drawing.Size(1420, 766);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboStatus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboFiltro);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
@@ -225,11 +233,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscar);
             this.Name = "InativarFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inativar Funcionario";
             ((System.ComponentModel.ISupportInitialize)(this.dgResultado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxStatusFunc.ResumeLayout(false);
-            this.groupBoxStatusFunc.PerformLayout();
             this.groupBoxResultadoPesquisa.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,13 +250,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.RadioButton rbnAtivo;
-        private System.Windows.Forms.RadioButton rbnInativo;
-        private System.Windows.Forms.GroupBox groupBoxStatusFunc;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnAISalvarFunc;
         private System.Windows.Forms.GroupBox groupBoxResultadoPesquisa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboFiltro;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboStatus;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label label4;
     }
 }

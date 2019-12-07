@@ -69,5 +69,15 @@ namespace DigitalCar.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2019_12_07_at_14_00_54 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2019-12-07 at 14.00.54", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

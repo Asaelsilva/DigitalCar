@@ -30,45 +30,46 @@ namespace DigitalCar
             funcionario.Rg = txtRg.Text;
             funcionario.DataNascimento = Convert.ToDateTime(dtNascimento.Text);
             funcionario.Email = txtEmail.Text;
-
-            if (cboTurno.Text == "Manhã")
-            {
-                funcionario.Turno = 1;
-            }
-            else if (cboTurno.Text == "Tarde")
-            {
-                funcionario.Turno = 2;
-            }
-            else
-            {
-                funcionario.Turno = 3;
-            }
-
-
-
-            if (cboFuncao.Text == "Admin")
-            {
-                funcionario.Funcao = 1;
-            }
-            else if (cboFuncao.Text == "Motorista")
-            {
-                funcionario.Funcao = 2;
-            }
-            if (cboFuncao.Text == "Estoquista")
-            {
-                funcionario.Funcao = 3;
-            }
+            funcionario.Turno = cboTurno.Text;
+            //if (cboTurno.Text == "Manhã")
+            //{
+            //    funcionario.Turno = cboTurno.Text;
+            //}
+            //else if (cboTurno.Text == "Tarde")
+            //{
+            //    funcionario.Turno = cboTurno.Text;
+            //}
+            //else
+            //{
+            //    funcionario.Turno = 3;
+            //}
 
 
 
-            if (cboStatus.Text == "Ativo")
-            {
-                funcionario.Status = 1;
-            }
-            else
-            {
-                funcionario.Status = 2;
-            }
+            //if (cboFuncao.Text == "Admin")
+            //{
+            //    funcionario.Funcao = 1;
+            //}
+            //else if (cboFuncao.Text == "Motorista")
+            //{
+            //    funcionario.Funcao = 2;
+            //}
+            //if (cboFuncao.Text == "Estoquista")
+            //{
+            //    funcionario.Funcao = 3;
+            //}
+
+            funcionario.Funcao = cboFuncao.Text;
+            funcionario.Status = cboStatus.Text;
+
+            //if (cboStatus.Text == "Ativo")
+            //{
+            //    funcionario.Status = 1;
+            //}
+            //else
+            //{
+            //    funcionario.Status = 2;
+            //}
 
 
             funcionario.Telefone = txtTelefone.Text;
@@ -82,9 +83,8 @@ namespace DigitalCar
 
             DBBaseEspecifica db = new DBBaseEspecifica();
 
-            db.Inserir(funcionario.Nome, funcionario.Cpf, funcionario.Rg, funcionario.DataNascimento, funcionario.Email, funcionario.Turno,
-                        funcionario.Funcao, funcionario.Status, funcionario.Telefone, funcionario.Celular, funcionario.Cep, funcionario.UF,
-                        funcionario.Cidade, funcionario.Rua, funcionario.Numero, funcionario.Bairro);
+            db.Inserir(funcionario.Nome, funcionario.Cpf, funcionario.Rg, funcionario.DataNascimento, funcionario.Email, funcionario.Telefone, funcionario.Celular, funcionario.Rua, funcionario.Turno,
+                        funcionario.Funcao, funcionario.Status, funcionario.Numero, funcionario.Bairro, funcionario.Cidade, funcionario.Cep, funcionario.UF);
 
             MessageBox.Show("Funcionario Incluido com Sucesso!");
             this.Close();

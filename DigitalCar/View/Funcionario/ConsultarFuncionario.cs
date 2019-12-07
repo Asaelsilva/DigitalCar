@@ -44,13 +44,13 @@ namespace DigitalCar
             }
 
 
-            if (cboFiltro.Text == "Codigo" && txtConsultarFuncionario.Text.Length < 2)
+            if (cboFiltro.Text == "Codigo" && txtConsultarFuncionario.Text.Length <= 2)
             {
                 funcionario.Id = Convert.ToInt32(txtConsultarFuncionario.Text);
                 Query = "SELECT * FROM Funcionario WHERE codigoId = '" + funcionario.Id + "'";
                 falso = true;
             }
-            else if (cboFiltro.Text == "CPF" && txtConsultarFuncionario.Text.Length == 11)
+            else if (cboFiltro.Text == "CPF" && txtConsultarFuncionario.Text.Length >= 11)
             {
                 funcionario.Cpf = txtConsultarFuncionario.Text;
                 Query = "SELECT * FROM Funcionario WHERE cpf = '" + funcionario.Cpf + "'";
@@ -106,15 +106,7 @@ namespace DigitalCar
 
         private void dgListaFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string strConxao = @"Data Source= DESKTOP-O34D68D\SQLEXPRESS; Integrated Security=true; Initial Catalog=DigitalCar";
-            string Query = "SELECT * FROM Funcionario ";
-            SqlConnection con = new SqlConnection(strConxao);
-            SqlDataAdapter da = new SqlDataAdapter(Query, con);
-            DataTable dt = new DataTable();
 
-            da.Fill(dt);
-
-            dgListaFuncionario.DataSource = dt;
         }
     }
 }

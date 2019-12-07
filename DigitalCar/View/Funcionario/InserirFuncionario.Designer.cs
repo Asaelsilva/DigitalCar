@@ -80,7 +80,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1061, 746);
+            this.btnVoltar.Location = new System.Drawing.Point(1134, 744);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 19;
@@ -95,7 +95,7 @@
             this.btnIncluirFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIncluirFuncionario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncluirFuncionario.ForeColor = System.Drawing.Color.White;
-            this.btnIncluirFuncionario.Location = new System.Drawing.Point(1244, 746);
+            this.btnIncluirFuncionario.Location = new System.Drawing.Point(1317, 744);
             this.btnIncluirFuncionario.Name = "btnIncluirFuncionario";
             this.btnIncluirFuncionario.Size = new System.Drawing.Size(114, 37);
             this.btnIncluirFuncionario.TabIndex = 18;
@@ -323,9 +323,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
             this.pictureBox1.Location = new System.Drawing.Point(19, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
@@ -435,7 +437,6 @@
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(235, 27);
             this.txtCelular.TabIndex = 10;
-            this.txtCelular.Text = "55 11 ";
             // 
             // txtTelefone
             // 
@@ -445,14 +446,13 @@
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(235, 27);
             this.txtTelefone.TabIndex = 9;
-            this.txtTelefone.Text = "55 11 ";
             // 
             // txtRg
             // 
             this.txtRg.AccessibleDescription = "";
             this.txtRg.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtRg.Location = new System.Drawing.Point(1119, 199);
-            this.txtRg.MaxLength = 9;
+            this.txtRg.MaxLength = 12;
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(213, 27);
             this.txtRg.TabIndex = 3;
@@ -461,7 +461,7 @@
             // 
             this.txtCpf.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.txtCpf.Location = new System.Drawing.Point(830, 199);
-            this.txtCpf.MaxLength = 11;
+            this.txtCpf.MaxLength = 14;
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(213, 27);
             this.txtCpf.TabIndex = 2;
@@ -549,11 +549,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1487, 1002);
+            this.ClientSize = new System.Drawing.Size(1487, 867);
             this.Controls.Add(this.tcInserirFuncionario);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnIncluirFuncionario);
             this.Name = "InserirFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InserirFuncionario";
             this.tabPageEndereco.ResumeLayout(false);
             this.tabPageEndereco.PerformLayout();

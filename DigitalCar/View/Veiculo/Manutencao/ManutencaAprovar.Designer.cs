@@ -49,7 +49,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(1103, 780);
+            this.btnVoltar.Location = new System.Drawing.Point(911, 700);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 37);
             this.btnVoltar.TabIndex = 90;
@@ -63,7 +63,7 @@
             this.btnAprovarManutencao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAprovarManutencao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAprovarManutencao.ForeColor = System.Drawing.Color.White;
-            this.btnAprovarManutencao.Location = new System.Drawing.Point(1286, 780);
+            this.btnAprovarManutencao.Location = new System.Drawing.Point(1085, 700);
             this.btnAprovarManutencao.Name = "btnAprovarManutencao";
             this.btnAprovarManutencao.Size = new System.Drawing.Size(114, 37);
             this.btnAprovarManutencao.TabIndex = 89;
@@ -84,9 +84,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 43);
+            this.pictureBox1.Image = global::DigitalCar.Properties.Resources.WhatsApp_Image_2019_12_07_at_14_00_54;
+            this.pictureBox1.Location = new System.Drawing.Point(37, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 326);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 87;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,9 +97,9 @@
             this.groupBoxResultadoPesquisa.Controls.Add(this.label1);
             this.groupBoxResultadoPesquisa.Controls.Add(this.comboBox1);
             this.groupBoxResultadoPesquisa.Controls.Add(this.dgResultado);
-            this.groupBoxResultadoPesquisa.Location = new System.Drawing.Point(345, 335);
+            this.groupBoxResultadoPesquisa.Location = new System.Drawing.Point(345, 287);
             this.groupBoxResultadoPesquisa.Name = "groupBoxResultadoPesquisa";
-            this.groupBoxResultadoPesquisa.Size = new System.Drawing.Size(792, 410);
+            this.groupBoxResultadoPesquisa.Size = new System.Drawing.Size(854, 363);
             this.groupBoxResultadoPesquisa.TabIndex = 93;
             this.groupBoxResultadoPesquisa.TabStop = false;
             this.groupBoxResultadoPesquisa.Text = "Manutenção Solicitada";
@@ -106,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(29, 341);
+            this.label1.Location = new System.Drawing.Point(30, 299);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 21);
             this.label1.TabIndex = 93;
@@ -115,7 +117,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 338);
+            this.comboBox1.Location = new System.Drawing.Point(184, 296);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(169, 24);
             this.comboBox1.TabIndex = 66;
@@ -127,14 +129,14 @@
             this.dgResultado.Name = "dgResultado";
             this.dgResultado.RowHeadersWidth = 51;
             this.dgResultado.RowTemplate.Height = 24;
-            this.dgResultado.Size = new System.Drawing.Size(677, 150);
+            this.dgResultado.Size = new System.Drawing.Size(757, 150);
             this.dgResultado.TabIndex = 65;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(341, 188);
+            this.label2.Location = new System.Drawing.Point(341, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(374, 21);
             this.label2.TabIndex = 92;
@@ -143,9 +145,9 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtBuscar.Location = new System.Drawing.Point(345, 243);
+            this.txtBuscar.Location = new System.Drawing.Point(345, 206);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(685, 27);
+            this.txtBuscar.Size = new System.Drawing.Size(519, 27);
             this.txtBuscar.TabIndex = 91;
             // 
             // ManutencaAprovar
@@ -153,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1424, 861);
+            this.ClientSize = new System.Drawing.Size(1330, 776);
             this.Controls.Add(this.groupBoxResultadoPesquisa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscar);
@@ -162,6 +164,7 @@
             this.Controls.Add(this.lblonsultar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ManutencaAprovar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManutencaAprovar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxResultadoPesquisa.ResumeLayout(false);

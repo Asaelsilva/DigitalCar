@@ -9,12 +9,12 @@ namespace bdDllEspecifica
 {
     public class DBBaseEspecifica
     {
-        public void Inserir(string nome, string cpf, string rg, DateTime datanascimento, string email, int turno, int funcao,
-                            int  status, string telefone, string celular, string cep, string uf, string cidade, string rua, int numero, string bairro)
+        public void Inserir(string nome, string cpf, string rg, DateTime datanascimento, string email, string telefone, string celular, string rua, string turno, string funcao,
+                            string status, int numero, string bairro, string cidade, string cep, string uf   )
         {
             DBBase bd = new DBBase();
-            string strQuery = "INSERT INTO Funcionario VALUES ('" + nome +  "' , '" + cpf + "', '" + rg + "', '" + datanascimento + "' , '" + email + "' , '" + turno + "' , " +
-                " '" + funcao + "' , '" + status + "' , '" + telefone + "' , '" + celular + "' , '" + cep + "' , '" + uf + "' , '" + cidade + "' , '" + rua + "' , " + numero + " , '" + bairro + "')";
+            string strQuery = "INSERT INTO Funcionario VALUES ('" + nome +  "' , '" + cpf + "', '" + rg + "', '" + datanascimento + "' , '" + email + "' , '" + telefone + "' , " +
+                " '" + celular + "' , '" + rua + "' , '" + turno + "' , '" + funcao + "' , '" + status + "' , " + numero + " , '" + bairro + "' , '" + cidade + "' , '" + cep + "' , '" + uf + "')";
             bd.ExecuteInstrucoesNaBase(strQuery);
 
 
@@ -39,5 +39,13 @@ namespace bdDllEspecifica
             bd.ExecuteInstrucoesNaBase(strQuery);
 
         }
+
+        public void AlteraStatusFuncioanrio(int codigo, string status)
+        {
+            DBBase bd = new DBBase();
+            var strQuery = "";
+            strQuery += "UPDATE Funcionario SET status = '" + status + "'  WHERE codigoId = " + codigo;
+            bd.ExecuteInstrucoesNaBase(strQuery);
+        } 
     }
 }
