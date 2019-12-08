@@ -24,8 +24,8 @@ namespace DigitalCar.Model.Entities
         public string UfDestino { get; set; }
         public string CepDestino { get; set; }
 
-        public int Km { get; set; }
-        public int Combustivel { get; set; }
-        public int Estacionamento { get; set; }
+        public string Km { get; set; }
+        public string Combustivel { get; set; }
+        public string Estacionamento { get; set; }
     }
 }

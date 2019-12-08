@@ -23,7 +23,7 @@ namespace bdDllEspecifica
         public void Consultar(string nome)
         {
             DBBase banco = new DBBase();
-            string Query = "SELECT id_Funcionario,nome, cpf FROM Funcionario WHERE nome = '"+ nome + "'";
+            string Query = "SELECT codigoId, nome, cpf FROM Funcionario WHERE nome = '"+ nome + "'";
 
             banco.ExecuteInstrucoesNaBase(Query);
         }
@@ -50,7 +50,7 @@ namespace bdDllEspecifica
 
         public void RegistrarViagem(string ruapartida, int numpartida, string bairropartida, string cidadepartida, string ufpartida, string cepPartida
                                   , string ruadestino, int numdestino, string bairrodestino, string cidadedestino, string ufdestino, string cepdestino
-                                  , int km, int combustivel, int estacionamento)
+                                  , string km, string combustivel, string estacionamento)
         {
             DBBase bd = new DBBase();
             var strQuery = "";
@@ -59,10 +59,9 @@ namespace bdDllEspecifica
                                             "km, combustivel, estacionamento)";
             strQuery += "VALUES ('" + ruapartida + "' , " + numpartida + " , '" + bairropartida + "' , '" + cidadepartida + "' , '" + ufpartida + "' , '" + cepPartida + "' , " +
                                 "'" + ruadestino + "' , " + numdestino + " , '" + bairrodestino + "' , '" + cidadedestino + "' , '" + ufdestino + "' , '" + cepdestino + "' , " +
-                                "" + km + " , " + combustivel + " , " + estacionamento + ")";
+                                "'" + km + "' , '" + combustivel + "' , '" + estacionamento + "')";
             bd.ExecuteInstrucoesNaBase(strQuery);
-
-
+            
         }
     }
 }

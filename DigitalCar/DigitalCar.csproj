@@ -66,6 +66,12 @@
     <Compile Include="View\Aviso\ProgramarAviso.Designer.cs">
       <DependentUpon>ProgramarAviso.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FinalizaViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FinalizaViagem.Designer.cs">
+      <DependentUpon>FinalizaViagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Funcionario\ConsultarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Motorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Motorista.Designer.cs">
+      <DependentUpon>Motorista.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Sistema\InserirNovaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +181,9 @@
     <EmbeddedResource Include="View\Aviso\ProgramarAviso.resx">
       <DependentUpon>ProgramarAviso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FinalizaViagem.resx">
+      <DependentUpon>FinalizaViagem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Funcionario\ConsultarFuncionario.resx">
       <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +206,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Motorista.resx">
+      <DependentUpon>Motorista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\InserirNovaCategoria.resx">
       <DependentUpon>InserirNovaCategoria.cs</DependentUpon>
     </EmbeddedResource>

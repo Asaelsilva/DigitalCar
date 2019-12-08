@@ -41,7 +41,7 @@
             this.txtCidadePartida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBairroPartida = new System.Windows.Forms.TextBox();
-            this.txtPartida = new System.Windows.Forms.TextBox();
+            this.txtNumPartida = new System.Windows.Forms.TextBox();
             this.txtRuaPartida = new System.Windows.Forms.TextBox();
             this.lbRg = new System.Windows.Forms.Label();
             this.lbCpf = new System.Windows.Forms.Label();
@@ -143,7 +143,7 @@
             this.tabPage1.Controls.Add(this.txtCidadePartida);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.txtBairroPartida);
-            this.tabPage1.Controls.Add(this.txtPartida);
+            this.tabPage1.Controls.Add(this.txtNumPartida);
             this.tabPage1.Controls.Add(this.txtRuaPartida);
             this.tabPage1.Controls.Add(this.lbRg);
             this.tabPage1.Controls.Add(this.lbCpf);
@@ -179,6 +179,34 @@
             // cboUfPartida
             // 
             this.cboUfPartida.FormattingEnabled = true;
+            this.cboUfPartida.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.cboUfPartida.Location = new System.Drawing.Point(675, 244);
             this.cboUfPartida.Name = "cboUfPartida";
             this.cboUfPartida.Size = new System.Drawing.Size(121, 32);
@@ -221,13 +249,13 @@
             this.txtBairroPartida.Size = new System.Drawing.Size(465, 27);
             this.txtBairroPartida.TabIndex = 76;
             // 
-            // txtPartida
+            // txtNumPartida
             // 
-            this.txtPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
-            this.txtPartida.Location = new System.Drawing.Point(675, 119);
-            this.txtPartida.Name = "txtPartida";
-            this.txtPartida.Size = new System.Drawing.Size(98, 27);
-            this.txtPartida.TabIndex = 75;
+            this.txtNumPartida.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.txtNumPartida.Location = new System.Drawing.Point(675, 119);
+            this.txtNumPartida.Name = "txtNumPartida";
+            this.txtNumPartida.Size = new System.Drawing.Size(98, 27);
+            this.txtNumPartida.TabIndex = 75;
             // 
             // txtRuaPartida
             // 
@@ -312,6 +340,34 @@
             // cboUfDestino
             // 
             this.cboUfDestino.FormattingEnabled = true;
+            this.cboUfDestino.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.cboUfDestino.Location = new System.Drawing.Point(690, 234);
             this.cboUfDestino.Name = "cboUfDestino";
             this.cboUfDestino.Size = new System.Drawing.Size(121, 32);
@@ -434,7 +490,6 @@
             this.txtEstacionamento.Name = "txtEstacionamento";
             this.txtEstacionamento.Size = new System.Drawing.Size(178, 27);
             this.txtEstacionamento.TabIndex = 89;
-            this.txtEstacionamento.Text = "R$";
             // 
             // txtKM
             // 
@@ -452,7 +507,6 @@
             this.txtCombustivel.Name = "txtCombustivel";
             this.txtCombustivel.Size = new System.Drawing.Size(178, 27);
             this.txtCombustivel.TabIndex = 88;
-            this.txtCombustivel.Text = "R$";
             // 
             // label13
             // 
@@ -527,7 +581,7 @@
         private System.Windows.Forms.TextBox txtCidadePartida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBairroPartida;
-        private System.Windows.Forms.TextBox txtPartida;
+        private System.Windows.Forms.TextBox txtNumPartida;
         private System.Windows.Forms.TextBox txtRuaPartida;
         private System.Windows.Forms.Label lbRg;
         private System.Windows.Forms.Label lbCpf;

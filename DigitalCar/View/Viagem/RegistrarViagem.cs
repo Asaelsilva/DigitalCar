@@ -1,4 +1,5 @@
-﻿using DigitalCar.Model.Entities;
+﻿using bdDllEspecifica;
+using DigitalCar.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,34 @@ namespace DigitalCar.Viagem
         private void btnRegistrarViagem_Click(object sender, EventArgs e)
         {
             Viagens viagem = new Viagens();
+
+            viagem.RuaPartida = txtRuaPartida.Text;
+            viagem.NunPartida = Convert.ToInt32(txtNumPartida.Text);
+            viagem.BairroPartida = txtBairroPartida.Text;
+            viagem.CidadePartida = txtCidadePartida.Text;
+            viagem.UfPartida = cboUfPartida.Text;
+            viagem.CepPartida = txtCepPartida.Text;
+
+
+            viagem.RuaDestino = txtRuaDestino.Text;
+            viagem.NunDestino = Convert.ToInt32(txtNumDestino.Text);
+            viagem.BairroDestino = txtBairroDestino.Text;
+            viagem.CidadeDestino = txtCidadeDestino.Text;
+            viagem.UfDestino = cboUfDestino.Text;
+            viagem.CepDestino = txtCepDestino.Text;
+
+            viagem.Km = txtKM.Text;
+            viagem.Combustivel = txtCombustivel.Text;
+            viagem.Estacionamento = txtEstacionamento.Text;
+
+            DBBaseEspecifica bd = new DBBaseEspecifica();
+
+            bd.RegistrarViagem(viagem.RuaPartida, viagem.NunPartida, viagem.BairroPartida, viagem.CidadePartida, viagem.UfPartida, viagem.CepPartida,
+                               viagem.RuaDestino, viagem.NunDestino, viagem.BairroDestino, viagem.CidadeDestino, viagem.UfDestino, viagem.CepDestino,
+                               viagem.Km, viagem.Combustivel, viagem.Estacionamento);
+
+            MessageBox.Show("Viagem inserida com sucesso!");
+            this.Close();
         }
     }
 }

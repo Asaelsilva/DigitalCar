@@ -37,7 +37,7 @@ namespace DigitalCar
                 return;
             }
 
-            if (cboFiltro.Text == "Codigo" && this.txtConsultarFuncionario.Text.Length >= 2)
+            if (cboFiltro.Text == "Codigo" && this.txtConsultarFuncionario.Text.Length > 2)
             {
                 MessageBox.Show("Funcionario nao enconrado");
                 falso = false;
