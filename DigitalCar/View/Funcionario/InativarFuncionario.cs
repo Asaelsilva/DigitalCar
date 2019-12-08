@@ -52,7 +52,7 @@ namespace DigitalCar
             if (cboFiltro.Text == "Codigo" && txtBuscar.Text.Length < 2)
             {
                 funcionario.Id = Convert.ToInt32(txtBuscar.Text);
-                Query = "SELECT codigoId, nome , status FROM Funcionario WHERE codigoId = '" + funcionario.Id + "'";
+                Query = "SELECT Id, nome , status FROM Funcionario WHERE Id = '" + funcionario.Id + "'";
                 falso = true;
             }
             else if (cboFiltro.Text == "CPF" && txtBuscar.Text.Length == 11)

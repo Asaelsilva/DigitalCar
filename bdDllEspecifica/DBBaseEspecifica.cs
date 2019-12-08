@@ -20,14 +20,7 @@ namespace bdDllEspecifica
 
         }
 
-        public void Consultar(string nome)
-        {
-            DBBase banco = new DBBase();
-            string Query = "SELECT codigoId, nome, cpf FROM Funcionario WHERE nome = '"+ nome + "'";
-
-            banco.ExecuteInstrucoesNaBase(Query);
-        }
-
+        
         public void InserirVeiculos(string categoria, string marca, string modelo, string placa, int anoModelo, int anoFabricacao
                                    , string propriedade, string status, string cor, string renavan,  int km)
         {
@@ -44,7 +37,7 @@ namespace bdDllEspecifica
         {
             DBBase bd = new DBBase();
             var strQuery = "";
-            strQuery += "UPDATE Funcionario SET status = '" + status + "'  WHERE codigoId = " + codigo;
+            strQuery += "UPDATE Funcionario SET status = '" + status + "'  WHERE Id = " + codigo;
             bd.ExecuteInstrucoesNaBase(strQuery);
         } 
 
